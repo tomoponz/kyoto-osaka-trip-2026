@@ -99,3 +99,38 @@ Open questions:
 - Exact walking time from the chosen lunch location to Kiyomizu-Gojo varies; 23 min is a representative map-route estimate, not a guaranteed value.
 
 Next target: 伏見稲荷大社（same Day 2 main-line facility immediately after 二年坂・三年坂）
+
+## Cycle 4 — 2026-09-02 18:30 JST
+
+Target: 伏見稲荷大社  
+Research depth: Deep venue research / Fushimi Inari official-first, Kyoto City current crowd-access data, current railway evidence and recent 2026 visitor calibration  
+Sources checked: 23 source entries recorded in `docs/research/venue-guides/fushimi-inari-taisha.md`.
+
+Key findings:
+- Current `trip-data.js` keeps 伏見稲荷大社 on 2026-09-08 from 14:10 to 15:40, with a note that summit access depends on stamina.
+- Kyoto City currently lists the shrine as open without a closing gate, year-round, with the amulet/talisman counter 8:00–18:00 and prayer handling 8:30–16:30.
+- Normal shrine visitation is free. Special exhibitions can have separate fees and must not be confused with ordinary admission.
+- Kyoto City states the full `お山めぐり` is about 4 km / 2 hours. Current practical guides place summit-inclusive visits at roughly 2–3 hours. Therefore **the summit should be cut from this trip's 90-minute slot**.
+- Recommended trip allocation is 75–90 min: Main Hall → Senbon Torii → Okusha Hohaisho → Omokaru Stone only if the queue is short → optionally continue a little farther uphill → turn back.
+- Yotsutsuji is valuable for the view but is conditional, not a must. A current guide estimates Main Hall-to-Yotsutsuji round trip at about 1–1.5 hours, leaving no safe margin for this itinerary once crowds, worship and photos are included.
+- The operational rule is to check the time at 14:50 and again at 15:05; 15:05 is the hard turn-back benchmark.
+- Omokaru Stone is cut if the wait looks longer than 10 minutes. Senbon Torii and reliable exit timing have higher priority.
+- Afternoon crowding must be assumed. Kyoto City includes Fushimi Inari in the official comfort-map/live-information system, and several 2026 visitor reports describe heavy daytime crowding even on weekdays. Multiple reports agree that crowds usually thin as visitors climb higher.
+- The most efficient transport pairing for this itinerary is **Keihan on arrival / JR on departure**: Kiyomizu-Gojo→Fushimi-Inari is direct and 240 yen; JR Inari is immediately in front of the shrine and connects efficiently toward Kyoto Station.
+- Fushimi Inari's official rules prohibit food outside designated free rest areas and prohibit photography that blocks narrow approaches; this materially affects a three-person photo strategy.
+- Official lockers exist at the shrine's south-side bicycle-parking area (large 500 / medium 300 / small 200 yen), and both JR Inari and Keihan Fushimi-Inari also have lockers. The trip should still leave luggage at the hotel.
+- As of the current official news search, no announcement closing normal visitation on 2026-09-08 was found. Previous 2026 typhoon-related access restrictions demonstrate why an official recheck is still required the day before/day of travel.
+
+Files updated:
+- `docs/research/venue-guides/fushimi-inari-taisha.md` — created full venue guide with 5-level durations, 90-minute route, summit decision, crowd strategy, transport pairing, party-of-three rules, CUT RULE, prep and source evidence.
+- `docs/research/venue-guides/INDEX.md` — 伏見稲荷大社 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 4.
+
+Open questions:
+- Recheck the Kyoto Tourism Comfort Map for 伏見稲荷大社付近 on 2026-09-08 morning and immediately before leaving the Higashiyama area.
+- Recheck Fushimi Inari official notices for weather-related access restrictions or temporary events.
+- Recheck 9/8 weekday Keihan Kiyomizu-Gojo→Fushimi-Inari and JR Inari→Kyoto timetables.
+- Same-day Omokaru Stone queue length cannot be predicted reliably.
+- Whether Yotsutsuji is practical depends on actual arrival time, crowd flow, heat/rain and the slowest traveler's condition.
+
+Next target: 金閣寺（next unreearched current main-line facility, scheduled for Day 4）

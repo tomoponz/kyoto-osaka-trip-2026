@@ -591,3 +591,33 @@ Open questions:
 - Workshop availability, exhibit waits and shop stock are inherently same-day variables.
 
 Next target: PHASE 2 — Day 4 Kyoto West / final-day flight optimization (`docs/research/day-optimization/day4-kyoto-west.md`)
+
+## Cycle 19 — 2026-09-02 22:24 JST
+
+Target: PHASE 2 — Day 4 Kyoto West / final-day flight optimization  
+Research depth: Deep day optimization / current hotel baggage policy, Kyoto Station luggage fallback, Arashiyama crowd route, Randen, Eigamura gates-hours-9/10 freshness, JR return structure, current Itami airport-bus timetable and flight-buffer CUT RULE  
+Sources checked: 19 source entries recorded in `docs/research/day-optimization/day4-kyoto-west.md`.
+
+Key findings:
+- Current `trip-data.js` Day 4 order is directionally sound. Reliability hinges on **16:35–16:40 Eigamura exit** and the **17:50 Kyoto Station Hachijo Exit → Itami airport bus** rather than using the full 16:50 sightseeing ceiling.
+- Kyoto Daiichi Hotel is the preferred baggage location **if the front desk confirms a 17:20–17:30 pickup is allowed**: post-checkout storage is officially supported, it is free, and the hotel is on the Hachijo side used by the airport bus. Crosta Kyoto is the deterministic fallback at 8:00–20:00 / 1,000 yen per item per day; three separate bags would cost 3,000 yen.
+- Target Arashiyama sightseeing from about 09:00, with Bamboo Grove plus only one add-on. Lunch stays before Eigamura with a 10-minute queue cap.
+- Randen Arashiyama→Uzumasa-Koryuji is a direct short rail connection at the current 250-yen flat fare, then the Eigamura main gate is about 5 minutes on foot.
+- Current Eigamura operations remain 10:00–21:00 with the existing attraction-pass structure. The 2026 `怪々YOKAI祭` begins **09-12**, so it is not available on the trip date 09-10. The exact 09-10 show schedule remains a same-day/previous-night recheck item.
+- At Eigamura, **16:20 = no new long queue**, 16:35–16:40 = target Shooting-Studio Gate exit, 16:50 = absolute upper limit. Shooting-Studio Gate is about 5 minutes from JR Uzumasa and remains the efficient Kyoto-return exit.
+- Allow about 30–40 minutes from Eigamura gate to Kyoto Station area including walk, train wait and JR ride rather than treating only the in-train time as transfer time.
+- Current Hankyu Kanko Bus timetable gives **17:50 Kyoto → 18:45 South / 18:50 North** as the base airport connection; 17:30 is a bonus, 18:10 an emergency fallback, and 18:30 is rejected from the planned itinerary. The service is first-come, not reserved.
+- Delay recovery always cuts Arashiyama/lunch/Eigamura content first. It does **not** move the movie-village exit later to consume the flight buffer.
+
+Files updated:
+- `docs/research/day-optimization/day4-kyoto-west.md` — created complete Day 4 guide with baggage decision tree, early Arashiyama route, Eigamura gate strategy, airport-bus anchors, 3-person operation, rain/fatigue handling, CUT RULE and 19-source evidence section.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 19.
+
+Open questions:
+- Confirm with Kyoto Daiichi Hotel that post-checkout bags may actually be collected around 17:20–17:30 on 09-10; official pages confirm storage but not a cutoff.
+- Recheck exact 09-10 JR Kyoto→Saga-Arashiyama and JR Uzumasa→Kyoto departures on 09-09/10.
+- Recheck Eigamura's exact 09-10 show schedule, attraction suspensions and same-day haunted-house waits.
+- Recheck 09-10 weather, Arashiyama comfort map, JR status, airport-bus operation and road conditions.
+- Confirm whether the return flight uses checked baggage; that materially affects how acceptable the 18:10 emergency bus would be.
+
+Next target: PHASE 3 — `docs/research/TRIP_TIPS.md`

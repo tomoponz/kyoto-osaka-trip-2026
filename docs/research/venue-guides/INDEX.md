@@ -1,6 +1,6 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 18:56 JST
+Last updated: 2026-09-02 19:03 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
@@ -18,7 +18,7 @@ Last updated: 2026-09-02 18:56 JST
 | 551蓬莱 本店 | NOT_STARTED | — | — | Yes |
 | 本家 第一旭 本店 | NOT_STARTED | — | — | Yes |
 | 心斎橋PARCO | NOT_STARTED | — | — | Yes |
-| 道頓堀・なんば | NOT_STARTED | — | — | Yes |
+| 道頓堀・なんば | RESEARCHED | 2026-09-02 | HIGH for official access/area facts / MEDIUM for crowd-duration and shop-queue estimates | Recheck weather, any event/traffic restrictions, 551 queue and Day 1 fatigue on 2026-09-07 |
 | ポルタイン弁天町 | NOT_STARTED | — | — | Yes |
 | 京都第一ホテル | NOT_STARTED | — | — | Yes |
 

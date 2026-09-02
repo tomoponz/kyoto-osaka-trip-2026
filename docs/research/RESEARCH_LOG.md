@@ -107,7 +107,7 @@ Research depth: Deep venue research / Fushimi Inari official-first, Kyoto City c
 Sources checked: 23 source entries recorded in `docs/research/venue-guides/fushimi-inari-taisha.md`.
 
 Key findings:
-- Current `trip-data.js` keeps 伏見稲荷大社 on 2026-09-08 from 14:10 to 15:40, with a note that summit access depends on stamina.
+- `trip-data.js` keeps 伏見稲荷大社 on 2026-09-08 from 14:10 to 15:40, with a note that summit access depends on stamina.
 - Kyoto City currently lists the shrine as open without a closing gate, year-round, with the amulet/talisman counter 8:00–18:00 and prayer handling 8:30–16:30.
 - Normal shrine visitation is free. Special exhibitions can have separate fees and must not be confused with ordinary admission.
 - Kyoto City states the full `お山めぐり` is about 4 km / 2 hours. Current practical guides place summit-inclusive visits at roughly 2–3 hours. Therefore **the summit should be cut from this trip's 90-minute slot**.
@@ -218,7 +218,7 @@ Key findings:
 - The route should be one-directional: Randen Arashiyama → Nonomiya side → bamboo → choose **one** add-on (Kameyama Park, Togetsukyo, or the station footbath) → JR Saga-Arashiyama / return. Do not reverse the bamboo route for extra photos.
 - If the entrance is crowded, do not wait for an empty frame. Keep walking and take photos farther in when flow permits. The grove is a public road, so blocking traffic is especially poor practice.
 - Kyoto City has current 2026 conservation activity after repeated damage to bamboo and bamboo fences. Do not carve/touch bamboo, cross fences, or use the path in ways that obstruct visitors.
-- Ryoanji→Arashiyama already requires about 30–40 min including station walking/waiting. Therefore the 12:20–13:20 transfer/lunch block only leaves a short meal window; a 10-minute restaurant queue cap is recommended.
+- Ryoanji→Arashiyama already requires about 30–40 min including station walking/waiting. Therefore the 12:20–13:20 transfer/lunch block only leaves a short meal window and should not absorb a late temple exit.
 - Randen current fare is 250 yen with cash or national transport IC cards. Transfer at Katabiranotsuji between the Kitano and Arashiyama lines does not require an intermediate payment.
 - Randen Arashiyama Station's footbath is currently 250 yen including a towel and is a useful fatigue option, but it replaces rather than supplements Kameyama Park/Togetsukyo in the 100-minute schedule.
 - Hard sightseeing exit is 15:00–15:15. The current 15:00–16:00 `余力枠` should be preserved as delay/return/baggage buffer on the 20:05 flight day, not treated as guaranteed extra tourism.
@@ -531,3 +531,32 @@ Open questions:
 - Umeda remains same-day optional, not part of fixed base route.
 
 Next target: PHASE 2 — Day 2 Kyoto East optimization (`docs/research/day-optimization/day2-kyoto-east.md`)
+
+## Cycle 17 — 2026-09-02 21:25 JST
+
+Target: PHASE 2 — Day 2 Kyoto East optimization  
+Research depth: Deep day optimization / current Sep 2026 Osaka→Kyoto rail, Kyoto City 208/59 timetables, short taxi connections, cross-city Kiyomizu→Kinkaku strategy, current West Japan JR Bus Apr-1 2026 timetable, rain/fatigue/delay handling  
+Sources checked: 25 source entries recorded in `docs/research/day-optimization/day2-kyoto-east.md`.
+
+Key findings:
+- Current `trip-data.js` keeps Day 2 as Bentencho→Kyoto Daiichi Hotel→Sanjusangendo→Kiyomizu→Ninenzaka/Sannenzaka→Kinkakuji→Ryoanji→Kyoto→Honke Daiichi Asahi. The order is directionally sound; the main issue is connection reliability.
+- Current September 2026 route examples support about 08:50 Bentencho→09:38 Kyoto, 48 min / 840 yen / one transfer, so target hotel luggage drop completion around 10:05.
+- Current weekday route 208 timetable gives Kujo Shako 10:18 and the corresponding Sanjusangendo stop around 10:29. If the 10:18 bus is missed, do not wait until 10:48; switch to taxi or another immediate fallback.
+- For three travelers, Sanjusangendo→Kiyomizu is a strong short-taxi use case as time insurance. The current third-party estimate is about 1,000 yen/cab and 8 min, explicitly an estimate rather than a guarantee.
+- Kiyomizu→Kinkakuji is Day 2's key cross-city segment. A current 2026 DiDi guide gives an estimate of about 4,390 yen/cab and 30 min; split three ways that is about 1,463 yen/person before any traffic/dispatch increase. The trip-specific rule is to favor taxi when the live estimate is roughly ≤5,000 yen/cab, ETA ≤35 min and it saves at least 15–20 min versus public transport.
+- Target Kinkakuji around 14:05–15:05. Current weekday route 59 has a 15:18 departure toward Ryoanji; if it is missed, good-weather walking at about 18 min can be better than waiting to 15:38.
+- Critical freshness finding: West Japan JR Bus changed the Takao Keihoku Line timetable on 2026-04-01. The current timetable gives Ryoanji-mae 16:35→Kyoto Station 17:11, with the next direct at 17:35→18:11. Target Ryoanji exit is 16:25; if 16:35 is missed, switch to the Randen→JR rail fallback instead of waiting an hour.
+- With the 16:35 connection, go directly from Kyoto Station to Honke Daiichi Asahi around 17:20–17:40 instead of adding a hotel backtrack.
+- The optimized taxi-heavy base does not justify buying the 1,100-yen subway/bus one-day pass upfront; pay-as-you-go IC is preferred.
+- Delay logic: if the morning is already +60 min before Sanjusangendo, cut Sanjusangendo first. For later delays, compress lunch/Kinkakuji/Ryoanji while preserving the core experiences and the evening recovery window.
+
+Files updated:
+- `docs/research/day-optimization/day2-kyoto-east.md` — created complete Day 2 guide with base timeline, transport-mode decisions, taxi decision gates, rain/fatigue handling, CUT RULE, same-day checklist and 25-source evidence section.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 17.
+
+Open questions:
+- Recheck 09-08 same-day JR operation, 10:18 route 208 status, Kiyomizu/Kinkaku live crowd, taxi ETA/fare, 15:18 route 59, 16:35 JR bus, First Asahi queue and weather.
+- Kiyomizu→Kinkakuji 4,390 yen/30 min and Sanjusangendo→Kiyomizu about 1,000 yen/8 min are estimates, not guaranteed values.
+- Existing Kinkakuji/Ryoanji venue guides retain old Day 4 date-specific routing context; current `trip-data.js` and this Day 2 optimization take precedence for routing.
+
+Next target: PHASE 2 — Day 3 Nintendo Museum optimization (`docs/research/day-optimization/day3-nintendo.md`)

@@ -369,3 +369,36 @@ Open questions:
 - Reservation status remains contradictory in third-party data and should not be treated as available without direct confirmation.
 
 Next target: ポルタイン弁天町（next unresearched scheduled hotel / main-line stay）
+
+## Cycle 12 — 2026-09-02 19:46 JST
+
+Target: ポルタイン弁天町  
+Research depth: Deep hotel operations research / hotel official access, breakfast, luggage and facilities data, current 2026 booking-platform operational details, current rail connections and 2026 guest reports  
+Sources checked: 17 source entries recorded in `docs/research/venue-guides/portainn-bentencho.md`.
+
+Key findings:
+- Current `trip-data.js` keeps ポルタイン弁天町 as the 09-07→09-08 stay, with 10:15–11:20 allocated to travel from Shin-Osaka / baggage drop and free light breakfast at about 07:00 the next morning.
+- Hotel official guidance states **check-in-day luggage can be stored free of charge from any time that day**. This makes the hotel a strong Day 1 luggage hub and removes any reason to wait for room-ready time before going to Namba.
+- Current official breakfast hours are **06:30–09:00** and include several breads, rice balls, yogurt and drinks. Official guidance allows breakfast items to be taken back to the room.
+- 2026 guest reports show rice balls can run out relatively early: examples include rice balls available around 07:00 but gone by about 08:00, and a 2026-08 report saying they were gone about 30 minutes after opening. Therefore **06:30–06:50 breakfast is recommended** if the group wants rice balls; the current 07:00 plan is still workable.
+- Current official hotel access is JR Bentencho central south gate immediately nearby / Osaka Metro Chuo Line Exit 4 about 2 minutes. The hotel also has a 1F Seven-Eleven, coin laundry and fitness facility.
+- Current booking platforms updated in 2026 list standard check-in 15:00 and checkout 10:00. The actual booked plan remains authority because the official pages retrieved did not expose a general check-in/out table.
+- Official 2025 notice sets **post-checkout luggage storage at 1,000 yen per room, cash only**. This trip should not use it because all luggage moves to Kyoto on 09-08.
+- Current route examples place Shin-Osaka→Bentencho at about **18–23 min / 200 yen / one transfer**. Therefore luggage drop can usually finish around 10:40–10:55 if the group leaves Shin-Osaka near 10:15.
+- Current route examples place Bentencho→Namba at about **15–18 min / 240 yen / one Osaka Metro transfer**. To preserve the 11:30-ish 551 target, **leaving the hotel around 11:00 is better than treating 11:20 as the target hotel departure**.
+- Current route examples place Bentencho→Kyoto at about **44–50 min / 840 yen / one transfer**. The current 08:30–09:45 Day 2 transfer block is therefore reasonable with buffer.
+- Amenities are distributed via an amenity buffet behind the front desk rather than assuming every item is already in the room.
+
+Files updated:
+- `docs/research/venue-guides/portainn-bentencho.md` — created complete hotel guide with five-level hotel-operation timing, luggage/breakfast strategy, Day 1/Day 2 connections, three-person rules, CUT RULE and 17-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — ポルタイン弁天町 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 12.
+
+Open questions:
+- Recheck the hotel's current luggage policy and official NEWS on 2026-09-07 before arriving.
+- Verify the actual reserved room type, payment status and what `price: 4845` represents from the reservation confirmation; `trip-data.js` does not define the price-unit semantics.
+- Recheck same-day breakfast offering; exact items and rice-ball stock are variable.
+- Recheck JR Osaka Loop Line / Osaka Metro operation on 09-07 and JR Bentencho→Kyoto operation on 09-08.
+- Check-in/check-out time should be verified against the actual booked plan even though current 2026 booking platforms list 15:00/10:00.
+
+Next target: 京都第一ホテル（next unresearched scheduled hotel / main-line stay）

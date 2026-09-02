@@ -1,6 +1,6 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 18:43 JST
+Last updated: 2026-09-02 18:56 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
@@ -10,7 +10,7 @@ Last updated: 2026-09-02 18:43 JST
 | 伏見稲荷大社 | RESEARCHED | 2026-09-02 | HIGH for official access-hours-rules facts / MEDIUM for crowd-duration estimates | Recheck comfort map, official notices, rain/heat and Keihan/JR timetables on 2026-09-08 |
 | 金閣寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/rules / MEDIUM for crowd-duration estimates | Recheck official notices, payment method, weather and bus status on 2026-09-10 |
 | 龍安寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/core sights / MEDIUM for crowd-duration and payment-method estimates | Recheck official notices, payment method, weather, 西源院 closure and Randen status on 2026-09-10 |
-| 嵐山・竹林の小径 | NOT_STARTED | — | — | Yes |
+| 嵐山・竹林の小径 | RESEARCHED | 2026-09-02 | HIGH for official access/basic-area facts / MEDIUM for crowd-duration and same-day lunch estimates | Recheck comfort map/live camera, weather, Randen/JR status and station facilities on 2026-09-10 |
 | 嵯峨野トロッコ列車 | NOT_STARTED | — | — | Yes |
 | 東映太秦映画村 | NOT_STARTED | — | — | Yes |
 | teamLab Biovortex Kyoto | NOT_STARTED | — | — | Yes |

@@ -87,11 +87,46 @@
     currentView = ['plan','spots','info','budget'].includes(view) ? view : 'plan';
     sessionStorage.setItem('activeView', currentView);
     $$('.app-view').forEach(el => el.classList.toggle('active', el.dataset.view === currentView));
-    $$('.nav-item').forEach(el => el.classList.toggle('active', el.dataset.viewTarget === currentView));
+    $$('.menu-item').forEach(el => el.classList.toggle('active', el.dataset.menuView === currentView && !el.dataset.menuTarget));
     if (scroll) window.scrollTo({top:0,behavior:'smooth'});
   }
 
-  $$('.nav-item').forEach(b => b.onclick = () => setView(b.dataset.viewTarget));
+  function openMenu() {
+    $('#appMenu').classList.add('open');
+    $('#menuBackdrop').hidden = false;
+    requestAnimationFrame(() => $('#menuBackdrop').classList.add('open'));
+    $('#appMenu').setAttribute('aria-hidden','false');
+    $('#menuButton').setAttribute('aria-expanded','true');
+    document.body.classList.add('menu-open');
+  }
+
+  function closeMenu() {
+    $('#appMenu').classList.remove('open');
+    $('#menuBackdrop').classList.remove('open');
+    $('#appMenu').setAttribute('aria-hidden','true');
+    $('#menuButton').setAttribute('aria-expanded','false');
+    document.body.classList.remove('menu-open');
+    setTimeout(() => { if (!$('#menuBackdrop').classList.contains('open')) $('#menuBackdrop').hidden = true; }, 220);
+  }
+
+  function navigateFromMenu(button) {
+    const view = button.dataset.menuView;
+    const targetId = button.dataset.menuTarget;
+    setView(view, !targetId);
+    closeMenu();
+    if (targetId) {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        const target = document.getElementById(targetId);
+        if (target) target.scrollIntoView({behavior:'smooth',block:'start'});
+      }));
+    }
+  }
+
+  $('#menuButton').onclick = openMenu;
+  $('#menuClose').onclick = closeMenu;
+  $('#menuBackdrop').onclick = closeMenu;
+  $$('.menu-item').forEach(b => b.onclick = () => navigateFromMenu(b));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#appMenu').classList.contains('open')) closeMenu(); });
 
   $('#shareButton').onclick = async () => {
     const payload = {title:data.meta.title,text:'京都・大阪旅行 2026 の共有用トリップボード',url:location.href};

@@ -5,7 +5,7 @@
   let overlay = null;
 
   const esc = (v='') => String(v).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-  const normalize = (v='') => String(v).toLowerCase().replace(/\s+/g,'').replace(/[・･→→()（）/／\-–—]/g,'');
+  const normalize = (v='') => String(v).toLowerCase().replace(/\s+/g,'').replace(/[・･→()（）/／\-–—「」『』:：]/g,'');
   const maps = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
 
   function ensureOverlay() {
@@ -32,12 +32,21 @@
   }
 
   function findEntry(name) {
-    if (!manifest) return null;
+    if (!manifest || !name) return null;
     const n = normalize(name);
-    return manifest.venues.find(v => [v.name, ...(v.aliases || [])].some(a => {
-      const x = normalize(a);
-      return x === n || (x.length >= 4 && (n.includes(x) || x.includes(n)));
-    })) || null;
+    if (!n) return null;
+    const exact = manifest.venues.find(v => [v.name, ...(v.aliases || [])].some(a => normalize(a) === n));
+    if (exact) return exact;
+
+    const hits = [];
+    manifest.venues.forEach(v => {
+      [v.name, ...(v.aliases || [])].forEach(a => {
+        const x = normalize(a);
+        if (x.length >= 2 && (n.includes(x) || x.includes(n))) hits.push({entry:v, score:x.length});
+      });
+    });
+    hits.sort((a,b) => b.score - a.score);
+    return hits[0]?.entry || null;
   }
 
   function ensureActions(card) {
@@ -48,6 +57,34 @@
       card.appendChild(actions);
     }
     return actions;
+  }
+
+  function makeTitleInteractive(node, entry) {
+    if (!node || node.dataset.guideTitleDecorated === '1') return;
+    const label = node.textContent.trim();
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `venue-title-link ${READY.has(entry.status) ? 'is-ready' : 'is-pending'}`;
+    button.textContent = label;
+    button.setAttribute('aria-label', `${entry.name}の施設情報を見る`);
+    button.title = READY.has(entry.status) ? '施設情報・攻略ガイドを見る' : '調査状況を見る';
+    button.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      openGuide(entry);
+    });
+    node.textContent = '';
+    node.appendChild(button);
+    node.dataset.guideTitleDecorated = '1';
+  }
+
+  function decorateFacilityNames() {
+    if (!manifest) return;
+    document.querySelectorAll('.spot-card h3, .mini-card h3, .event-card h4, .route-step b').forEach(node => {
+      if (node.dataset.guideTitleDecorated === '1') return;
+      const entry = findEntry(node.textContent.trim());
+      if (entry) makeTitleInteractive(node, entry);
+    });
   }
 
   function decorateCards() {
@@ -62,11 +99,12 @@
       const button = document.createElement('button');
       button.type = 'button';
       button.className = `action guide-action ${READY.has(entry.status) ? 'is-ready' : 'is-pending'}`;
-      button.textContent = READY.has(entry.status) ? '攻略ガイド' : '攻略ガイド・調査待ち';
+      button.textContent = READY.has(entry.status) ? '施設情報・攻略' : '施設情報・調査待ち';
       button.addEventListener('click', () => openGuide(entry));
       actions.appendChild(button);
       card.dataset.guideDecorated = '1';
     });
+    decorateFacilityNames();
   }
 
   function renderPending(entry, message='この施設はResearch Workerによる調査待ちです。') {
@@ -75,7 +113,7 @@
       <div class="guide-pending">
         <span class="guide-pending-badge">${esc(statusLabel(entry.status))}</span>
         <h2 id="venueGuideTitle">${esc(entry.name)}</h2>
-        <p>${esc(message)} 調査が完了すると、推奨所要時間・効率的に回るコツ・混雑攻略・CUT RULE・情報源がこの画面に自動表示されます。</p>
+        <p>${esc(message)} 調査が完了すると、所要時間・効率的な回り方・混雑攻略・注意点・CUT RULE・情報源をここで確認できます。</p>
       </div>`;
   }
 
@@ -159,13 +197,162 @@
     `;
   }
 
+  function safeHref(url='') {
+    try {
+      const u = new URL(url, location.href);
+      return ['http:','https:'].includes(u.protocol) ? u.href : '#';
+    } catch { return '#'; }
+  }
+
+  function inlineMd(input='') {
+    const links = [];
+    let source = String(input).replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, (_, label, url) => {
+      const key = `@@LINK${links.length}@@`;
+      links.push({key,label,url});
+      return key;
+    });
+    let out = esc(source);
+    out = out.replace(/`([^`]+)`/g, '<code>$1</code>');
+    out = out.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    out = out.replace(/__([^_]+)__/g, '<strong>$1</strong>');
+    links.forEach(({key,label,url}) => {
+      out = out.replace(key, `<a target="_blank" rel="noopener" href="${esc(safeHref(url))}">${esc(label)}</a>`);
+    });
+    return out;
+  }
+
+  function splitTableRow(line='') {
+    return line.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(x => x.trim());
+  }
+
+  function isTableDivider(line='') {
+    const cells = splitTableRow(line);
+    return cells.length > 0 && cells.every(x => /^:?-{3,}:?$/.test(x));
+  }
+
+  function extractMdMeta(md, entry) {
+    const lines = md.split(/\r?\n/);
+    const title = lines.find(l => /^#\s+/.test(l))?.replace(/^#\s+/,'').trim() || entry.name;
+    const last = md.match(/^Last researched:\s*(.+)$/mi)?.[1]?.trim() || '';
+    const status = md.match(/^Status:\s*(.+)$/mi)?.[1]?.trim() || entry.status;
+    const confidence = md.match(/^Confidence:\s*(.+)$/mi)?.[1]?.trim() || '';
+    return {title,last,status,confidence};
+  }
+
+  function markdownToHtml(md) {
+    let lines = md.replace(/\r/g,'').split('\n');
+    const firstSection = lines.findIndex(l => /^##\s+/.test(l));
+    if (firstSection >= 0) lines = lines.slice(firstSection);
+
+    let html = '';
+    let i = 0;
+    let sectionOpen = false;
+    const closeSection = () => {
+      if (sectionOpen) { html += '</section>'; sectionOpen = false; }
+    };
+
+    while (i < lines.length) {
+      const line = lines[i];
+      if (!line.trim()) { i++; continue; }
+
+      const h2 = line.match(/^##\s+(.+)/);
+      if (h2) {
+        closeSection();
+        html += `<section class="guide-section guide-md-section"><h3>${inlineMd(h2[1])}</h3>`;
+        sectionOpen = true;
+        i++;
+        continue;
+      }
+      const h3 = line.match(/^###\s+(.+)/);
+      if (h3) { html += `<h4>${inlineMd(h3[1])}</h4>`; i++; continue; }
+      const h4 = line.match(/^####\s+(.+)/);
+      if (h4) { html += `<h5>${inlineMd(h4[1])}</h5>`; i++; continue; }
+
+      if (/^```/.test(line)) {
+        const code = [];
+        i++;
+        while (i < lines.length && !/^```/.test(lines[i])) { code.push(lines[i]); i++; }
+        if (i < lines.length) i++;
+        html += `<pre class="guide-md-code"><code>${esc(code.join('\n'))}</code></pre>`;
+        continue;
+      }
+
+      if (line.includes('|') && i + 1 < lines.length && isTableDivider(lines[i+1])) {
+        const head = splitTableRow(line);
+        i += 2;
+        const rows = [];
+        while (i < lines.length && lines[i].includes('|') && lines[i].trim()) {
+          rows.push(splitTableRow(lines[i]));
+          i++;
+        }
+        html += `<div class="guide-table-wrap"><table class="guide-table guide-md-table"><thead><tr>${head.map(c => `<th>${inlineMd(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${inlineMd(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+        continue;
+      }
+
+      if (/^[-*]\s+/.test(line)) {
+        const items = [];
+        while (i < lines.length && /^[-*]\s+/.test(lines[i])) {
+          items.push(lines[i].replace(/^[-*]\s+/,''));
+          i++;
+        }
+        html += `<ul class="guide-list guide-md-list">${items.map(x => `<li>${inlineMd(x)}</li>`).join('')}</ul>`;
+        continue;
+      }
+
+      if (/^\d+[.)]\s+/.test(line)) {
+        const items = [];
+        while (i < lines.length && /^\d+[.)]\s+/.test(lines[i])) {
+          items.push(lines[i].replace(/^\d+[.)]\s+/,''));
+          i++;
+        }
+        html += `<ol class="guide-list guide-md-list">${items.map(x => `<li>${inlineMd(x)}</li>`).join('')}</ol>`;
+        continue;
+      }
+
+      if (/^>\s?/.test(line)) {
+        const parts = [];
+        while (i < lines.length && /^>\s?/.test(lines[i])) {
+          parts.push(lines[i].replace(/^>\s?/,''));
+          i++;
+        }
+        html += `<blockquote class="guide-md-quote">${inlineMd(parts.join(' '))}</blockquote>`;
+        continue;
+      }
+
+      if (/^(---|___|\*\*\*)\s*$/.test(line)) { html += '<hr class="guide-md-rule">'; i++; continue; }
+
+      const paragraph = [line.trim()];
+      i++;
+      while (i < lines.length && lines[i].trim() && !/^(#{2,4}\s+|```|[-*]\s+|\d+[.)]\s+|>\s?|---\s*$)/.test(lines[i]) && !(lines[i].includes('|') && i + 1 < lines.length && isTableDivider(lines[i+1]))) {
+        paragraph.push(lines[i].trim());
+        i++;
+      }
+      html += `<p class="guide-md-p">${inlineMd(paragraph.join(' '))}</p>`;
+    }
+    closeSection();
+    return html;
+  }
+
+  function renderMarkdownGuide(md, entry) {
+    const meta = extractMdMeta(md, entry);
+    document.getElementById('venueGuideStatus').textContent = `${statusLabel(meta.status)}${meta.last ? ` · ${meta.last}` : ''}`;
+    document.getElementById('venueGuideBody').innerHTML = `
+      <section class="guide-hero guide-hero-research">
+        <p class="guide-kicker">RESEARCHED VENUE GUIDE</p>
+        <h2 id="venueGuideTitle">${esc(meta.title)}</h2>
+        <p>繰り返しResearchで蓄積した実用情報。所要時間、効率的な回り方、混雑、3人旅行向けの注意、遅延時のCUT RULE、情報源まで確認できます。</p>
+        ${meta.confidence ? `<div class="guide-research-confidence"><small>CONFIDENCE</small><span>${esc(meta.confidence)}</span></div>` : ''}
+      </section>
+      <div class="guide-markdown">${markdownToHtml(md)}</div>`;
+  }
+
   async function openGuide(entry) {
     ensureOverlay();
     overlay.classList.add('open');
     overlay.setAttribute('aria-hidden','false');
     document.body.classList.add('venue-guide-open');
     document.getElementById('venueGuideStatus').textContent = statusLabel(entry.status);
-    document.getElementById('venueGuideBody').innerHTML = '<div class="guide-loading">ガイドを読み込み中…</div>';
+    document.getElementById('venueGuideBody').innerHTML = '<div class="guide-loading">施設情報を読み込み中…</div>';
     history.replaceState(null, '', `${location.pathname}${location.search}#guide=${encodeURIComponent(entry.slug)}`);
 
     if (!READY.has(entry.status)) {
@@ -174,12 +361,17 @@
     }
 
     try {
+      if (entry.mdPath) {
+        const response = await fetch(`./${entry.mdPath}?v=${encodeURIComponent(manifest.updatedAt || '')}`, {cache:'no-store'});
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        renderMarkdownGuide(await response.text(), entry);
+        return;
+      }
       const response = await fetch(`./${entry.path}?v=${encodeURIComponent(manifest.updatedAt || '')}`, {cache:'no-store'});
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
-      renderGuide(data, entry);
+      renderGuide(await response.json(), entry);
     } catch (e) {
-      document.getElementById('venueGuideBody').innerHTML = `<div class="guide-error">調査データを読み込めませんでした。manifestのstatusとJSONファイルの配置を確認してください。<br><small>${esc(e.message)}</small></div>`;
+      document.getElementById('venueGuideBody').innerHTML = `<div class="guide-error">施設情報を読み込めませんでした。Researchファイルの配置とmanifestを確認してください。<br><small>${esc(e.message)}</small></div>`;
     }
   }
 
@@ -206,6 +398,11 @@
       decorateCards();
       new MutationObserver(decorateCards).observe(document.body, {subtree:true, childList:true});
       openFromHash();
+      window.openVenueGuideByName = name => {
+        const entry = findEntry(name);
+        if (entry) openGuide(entry);
+        return Boolean(entry);
+      };
     } catch (e) {
       console.warn('Venue research manifest could not be loaded:', e);
     }

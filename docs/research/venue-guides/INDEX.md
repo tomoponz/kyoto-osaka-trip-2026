@@ -1,22 +1,23 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 19:46 JST
+Last updated: 2026-09-02 19:57 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
 | Nintendo Museum | RESEARCHED | 2026-09-02 | HIGH for official facts / MEDIUM for crowd-duration estimates | Recheck official notices, hours, access, and workshop availability on 2026-09-08/09 |
+| 三十三間堂 | NOT_STARTED | — | — | Yes — newly added to current Day 2 main line; research next |
 | 清水寺 | RESEARCHED | 2026-09-02 | HIGH for official facts / MEDIUM for crowd-duration estimates | Recheck official notices, comfort map, transport, Jishu Shrine and Tainai-meguri on 2026-09-08 |
 | 二年坂・三年坂 | RESEARCHED | 2026-09-02 | HIGH for official area/access facts / MEDIUM for crowd-duration and lunch estimates | Recheck comfort map, rain, lunch queues and Keihan timetable on 2026-09-08 |
-| 伏見稲荷大社 | RESEARCHED | 2026-09-02 | HIGH for official access-hours-rules facts / MEDIUM for crowd-duration estimates | Recheck comfort map, official notices, rain/heat and Keihan/JR timetables on 2026-09-08 |
-| 金閣寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/rules / MEDIUM for crowd-duration estimates | Recheck official notices, payment method, weather and bus status on 2026-09-10 |
-| 龍安寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/core sights / MEDIUM for crowd-duration and payment-method estimates | Recheck official notices, payment method, weather, 西源院 closure and Randen status on 2026-09-10 |
-| 嵐山・竹林の小径 | RESEARCHED | 2026-09-02 | HIGH for official access/basic-area facts / MEDIUM for crowd-duration and same-day lunch estimates | Recheck comfort map/live camera, weather, Randen/JR status and station facilities on 2026-09-10 |
+| 伏見稲荷大社 | RESEARCHED | 2026-09-02 | HIGH for official access-hours-rules facts / MEDIUM for crowd-duration estimates | Current trip-data now uses it as optional Day 3 short course; re-evaluate duration in Day optimization |
+| 金閣寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/rules / MEDIUM for crowd-duration estimates | Current trip-data moved it to Day 2 afternoon; re-evaluate connection/timing in Day optimization |
+| 龍安寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/core sights / MEDIUM for crowd-duration and payment-method estimates | Current trip-data moved it to Day 2 afternoon; re-evaluate connection/timing in Day optimization |
+| 嵐山・竹林の小径 | RESEARCHED | 2026-09-02 | HIGH for official access/basic-area facts / MEDIUM for crowd-duration and same-day lunch estimates | Current trip-data moved it to Day 4 morning before Eigamura; re-evaluate duration/connection in Day optimization |
 | 嵯峨野トロッコ列車 | NOT_STARTED | — | — | Yes |
-| 東映太秦映画村 | NOT_STARTED | — | — | Yes |
+| 東映太秦映画村 | NOT_STARTED | — | — | Yes — current Day 4 main line |
 | teamLab Biovortex Kyoto | NOT_STARTED | — | — | Yes |
 | 鞍馬 → 貴船 山越え | NOT_STARTED | — | — | Yes |
 | 551蓬莱 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current prices/menu / MEDIUM for queue-duration and reservation behavior | Recheck 9/7 same-day queue, temporary closure, limited-item stock and payment options on 2026-09-07 |
-| 本家 第一旭 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/menu/payment / MEDIUM for queue-duration and reservation behavior | Recheck 9/8 same-day queue, temporary closure, student-discount conditions and ticketing flow on 2026-09-08 |
+| 本家 第一旭 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/menu/payment / MEDIUM for queue-duration and reservation behavior | Current trip-data moved target to about 18:00; recheck same-day queue and timing on 2026-09-08 |
 | 心斎橋PARCO | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current floors/events / MEDIUM for crowd-duration estimates | Recheck 9/7 event entry rules, Disney Store restrictions, temporary hours and fatigue on 2026-09-07 |
 | 道頓堀・なんば | RESEARCHED | 2026-09-02 | HIGH for official access/area facts / MEDIUM for crowd-duration and shop-queue estimates | Recheck weather, any event/traffic restrictions, 551 queue and Day 1 fatigue on 2026-09-07 |
 | ポルタイン弁天町 | RESEARCHED | 2026-09-02 | HIGH for official access/breakfast/luggage/facilities / MEDIUM for check-in-out and breakfast depletion timing | Recheck 9/7 luggage policy, current breakfast, reservation details and JR/Metro operation on 2026-09-07/08 |

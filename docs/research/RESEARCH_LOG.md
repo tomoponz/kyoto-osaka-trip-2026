@@ -303,3 +303,34 @@ Open questions:
 - Shop-specific stock and limited items can change daily.
 
 Next target: 551蓬莱 本店（next unresearched scheduled food stop on the current main line）
+
+## Cycle 10 — 2026-09-02 19:25 JST
+
+Target: 551蓬莱 本店  
+Research depth: Deep food-stop research / 551 official current store page, 2026-09-01 menu and price revision, official product pages, Ebisubashi shopping-street data, and recent 2025–2026 queue reports  
+Sources checked: 14 source entries recorded in `docs/research/venue-guides/551-horai-honten.md`.
+
+Key findings:
+- Current `trip-data.js` schedules 551蓬莱 本店 at about 11:30 on 2026-09-07, immediately before the 12:15–14:00 Dotonbori/Namba block.
+- Official current hours are 10:00–21:30 for the 1F shop and 11:00–21:30 last order for the 2F/3F restaurant. The official 2026 closure list has 09-01 and 09-15 closed; 09-07 Monday is not on the closure list.
+- The restaurant slot is time-sensitive. Current 2026 visitor evidence shows queues can already exist shortly after 11:00, and an August holiday report describes the first seating filling before opening with second seating around 11:30.
+- Recommended allocation is 45–60 min, with 70 min as the maximum safe use. Operational rule: check the restaurant queue immediately; if seating by about 11:45 looks unlikely, switch to the 1F takeout option rather than letting the queue consume Dotonbori time.
+- 2026-09-01 price revision is already effective for the trip. Current official restaurant prices include pork bun 330 yen, seafood yakisoba 1,300 yen, seafood yakisoba set 1,800 yen, and 551 dim-sum set 1,980 yen. Current official takeout pork-bun price is 500 yen for 2.
+- The best three-person strategy is one pork bun each plus different noodle/rice/set choices rather than all ordering the same dish, allowing more of the flagship restaurant menu to be sampled within one meal.
+- The flagship has 1F takeout and 2F/3F restaurant functions. Limited anman starts at 10:00 and limited char-siu buns at 11:00, but these are optional and must not delay the main meal or Dotonbori departure.
+- Official store information confirms credit cards are accepted. Official pages do not clearly confirm electronic-money/QR support, so card plus cash backup is recommended.
+- Hard departure is 12:20, ideally 12:10–12:15. If the schedule is 30 min late, use takeout by default; at 60+ min late, preserve only a quick pork-bun purchase if the line is short.
+
+Files updated:
+- `docs/research/venue-guides/551-horai-honten.md` — created full guide with five-level duration estimates, 11:45 seating gate, 2026-09 menu/prices, three-person ordering strategy, queue analysis, payment, CUT RULE and 14-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — 551蓬莱 本店 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 10.
+
+Open questions:
+- Recheck 09-07 same-day restaurant and 1F shop queue on arrival; no advance research can determine actual waiting time.
+- Recheck any temporary closure or hours change on the official store page on 09-06 evening / 09-07 morning.
+- General lunch reservation rules are not clearly documented on the official store page; do not rely on reservation unless directly confirmed with the store.
+- Recheck electronic-money/QR payment support if the group plans to avoid cash entirely.
+- Limited char-siu bun/anman availability is same-day and secondary to the main itinerary.
+
+Next target: 本家 第一旭 本店（next unresearched scheduled food stop on the current main line）

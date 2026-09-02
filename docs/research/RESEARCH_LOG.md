@@ -560,3 +560,34 @@ Open questions:
 - Existing Kinkakuji/Ryoanji venue guides retain old Day 4 date-specific routing context; current `trip-data.js` and this Day 2 optimization take precedence for routing.
 
 Next target: PHASE 2 — Day 3 Nintendo Museum optimization (`docs/research/day-optimization/day3-nintendo.md`)
+
+## Cycle 18 — 2026-09-02 21:44 JST
+
+Target: PHASE 2 — Day 3 Nintendo Museum optimization  
+Research depth: Deep day optimization / current Nintendo official entry-access-cafe-workshop rules, Fushimi Inari crowd/access guidance, current September 2026 JR Nara Line timetable, 9/9-specific freshness and delay handling  
+Sources checked: 18 source entries recorded in `docs/research/day-optimization/day3-nintendo.md`.
+
+Key findings:
+- Current `trip-data.js` correctly makes 12:30 Nintendo Museum absolute priority and Fushimi Inari optional. The main improvement is transport specificity rather than reordering the day.
+- Fushimi Inari→Nintendo Museum should use **JR Inari→JR Ogura directly on the Nara Line**. The shrine is immediately by JR Inari and Nintendo officially gives JR Ogura→Museum as about 8 minutes on foot, eliminating unnecessary Kyoto backtracking or Keihan→Kintetsu transfer.
+- Current September 2026 JR timetable gives **Inari 10:39→JR Ogura 10:54** on Miyakoji Rapid as the first target; if missed, use the **10:50 local**, reaching JR Ogura around 11:09.
+- Recommended Fushimi Inari slot is about 09:20–10:25: Main Hall→Senbon Torii→Okusha and back. Summit/Yotsutsuji are not attempted; omokaru stone is queue-dependent.
+- Lunch remains outside the museum around Ogura at about 11:05–11:45 with a 10-minute queue cap. Nintendo officially expects HATENA BURGER crowding from 12:00–15:00, so using the café as the primary 12:30 lunch is inefficient.
+- Target Museum arrival is **12:05–12:15**. Nintendo explicitly does not allow admission before the reserved time, so excessively early arrival has little value; QR/ID/security buffer still argues against arriving at 12:29.
+- Museum stay should be extended from the production timeline's 16:15-ish finish to **16:45–17:00** where possible. Official FAQ gives about 3 hours as a guideline, but Nintendo's own friend/family model extends into 17:00 shopping and there is normally no stay-duration limit.
+- Critical 9/9 freshness item: Nintendo's Super Mario Bros. 40th anniversary special play-ticket design, logo installation, special T-shirt and history board all end **2026-09-07**. Mii play-ticket design continues from 9/8. Do not plan time around ended content.
+- Nintendo prohibits taxi arrival. Delay recovery must therefore happen by cutting Fushimi Inari/lunch time, not by taking a taxi to the museum gate.
+- Delay: +15 compress Fushimi; +30 use 35–45 min core only; +60 or more cut Fushimi completely. Museum time is protected.
+
+Files updated:
+- `docs/research/day-optimization/day3-nintendo.md` — created complete Day 3 guide with direct JR connection, timeline, 9/9-specific freshness, museum time allocation, three-person rules, weather/fatigue handling, CUT RULE and 18-source evidence section.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 18.
+
+Open questions:
+- Recheck 9/9 JR Nara Line operation and exact 10:39/10:50 trains on the morning of travel.
+- Recheck Nintendo Museum official notices / ticket page on 9/8 evening and 9/9 morning for temporary closure or rule changes.
+- Recheck Fushimi Inari comfort map/live conditions, weather and group fatigue before committing to the optional shrine.
+- Lunch venue remains intentionally unfixed; same-day queue is more important than restaurant reputation.
+- Workshop availability, exhibit waits and shop stock are inherently same-day variables.
+
+Next target: PHASE 2 — Day 4 Kyoto West / final-day flight optimization (`docs/research/day-optimization/day4-kyoto-west.md`)

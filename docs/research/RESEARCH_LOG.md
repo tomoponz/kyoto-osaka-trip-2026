@@ -269,3 +269,37 @@ Open questions:
 - Exact crowd density at Ebisu Bridge cannot be known in advance; use actual flow rather than waiting for empty photos.
 
 Next target: 心斎橋PARCO（next unresearched current main-line attraction; Day 1）
+
+## Cycle 9 — 2026-09-02 19:03 JST
+
+Target: 心斎橋PARCO  
+Research depth: Deep venue research / Shinsaibashi PARCO official floors, access, payment, 2026 new shops and 2026-09-07 event schedule, with Osaka Metro access verification  
+Sources checked: 17 source entries recorded in `docs/research/venue-guides/shinsaibashi-parco.md`.
+
+Key findings:
+- Current `trip-data.js` keeps 心斎橋PARCO on 2026-09-07 from 14:30 to 16:30, immediately after 道頓堀・なんば and before the flexible evening block.
+- Current official general merchandise/service hours are 10:00–20:00; the facility is directly connected to Osaka Metro Shinsaibashi Station South Gate.
+- The current 120-minute slot is well sized if the party does **not** try to browse every floor. Recommended allocation is 90–120 min.
+- For this party, the highest-value structure is 5F → 6F → 9F. 6F is the core, containing CAPCOM STORE OSAKA, Godzilla Store Osaka, POP MART, Ghibli, Chiikawa and other permanent pop-culture shops.
+- 5F adds Bandai Namco Cross Store and RADIO EVA STORE OSAKA; a Disney Store opened on 2026-08-26. The official reservation requirement applied to 08-26 through 08-30 only, so 09-07 is not currently listed as reservation-required, though crowd restrictions should be rechecked.
+- On 09-07, the official event calendar includes the Jujutsu Kaisen 5th Anniversary POP UP on 9F (free admission, 08-29 through 09-13), HELLO! PUPPET SUNSUN on 9F, Urumia on 6F and httl on B1F.
+- The paid `ザ・森東 -心斎橋支社-` exhibition is also active on 09-07 at 14F PARCO HALL. Admission is 1,400 yen with audio guide / admission benefit, and the official page warns that entry restrictions may be used when crowded. It is optional, not part of the base 120-minute route.
+- Operational route: go straight to 5F, then 6F for 40–50 min, then choose one 9F event. Do not start at 1F and browse upward sequentially.
+- Because 14F's official venue guidance warns that PARCO elevators can be heavily crowded, the 14F paid event adds nontrivial vertical-movement uncertainty.
+- Shinsaibashi PARCO supports major QR payments, electronic money and transit IC cards at facility level, but individual-shop exceptions exist.
+- This is a strong rain/fatigue buffer venue: the party can reduce outdoor Dotonbori time and use the indoor 5F/6F/9F route without changing the fixed later schedule.
+- Hard operational rule remains 16:20 regroup / 16:30 exit. The facility stays open later, but extending the visit is discouraged because Day 1 started at 05:00 and the evening block is recovery margin.
+
+Files updated:
+- `docs/research/venue-guides/shinsaibashi-parco.md` — created full guide with five-level durations, 120-minute route, 5F/6F/9F priorities, 09-07 event schedule, payment/access data, three-person strategy, CUT RULE and 17-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — 心斎橋PARCO set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 9.
+
+Open questions:
+- Recheck 09-07 same-day entry/queue/numbered-ticket rules for the 9F Jujutsu Kaisen and PUPPET SUNSUN events.
+- Recheck whether Disney Store applies any renewed crowd-control entry restriction after its opening period.
+- The official `ザ・森東` page does not state a standard visit duration; do not insert it into the base itinerary without same-day interest/time confirmation.
+- Recheck temporary hours or added events on 09-06 evening / 09-07 morning.
+- Shop-specific stock and limited items can change daily.
+
+Next target: 551蓬莱 本店（next unresearched scheduled food stop on the current main line）

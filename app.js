@@ -29,6 +29,7 @@
   const currentDay = data.days.find(d => d.date === todayJst());
   let selectedDay = Number(sessionStorage.getItem('selectedDay')) || currentDay?.dayNo || 1;
   let currentView = sessionStorage.getItem('activeView') || 'plan';
+  let currentNav = sessionStorage.getItem('activeNav') || (currentView === 'info' ? 'staySection' : currentView);
   let filter = 'すべて';
 
   function renderStatus() {
@@ -49,7 +50,7 @@
       sessionStorage.setItem('selectedDay', String(selectedDay));
       renderTabs();
       renderToday();
-      window.scrollTo({top:0,behavior:'smooth'});
+      window.scrollTo({top: document.querySelector('.top-tab-shell')?.offsetTop || 0, behavior:'smooth'});
     });
   }
 
@@ -83,37 +84,27 @@
     $('#budgetContent').innerHTML = `<div class="budget-summary"><div class="budget-line"><div><div class="budget-big">${yen(total)}</div><div class="budget-sub">現在の標準見積り</div></div><div class="budget-sub">目標 ${yen(data.meta.budgetTarget)}</div></div><div class="meter"><div style="width:${pct}%"></div></div><div class="budget-sub budget-goals">固定済み ${yen(fixed)} ／ 節約目標 ${yen(data.meta.budgetSoftTarget)} ／ 上限 ${yen(data.meta.budgetCeiling)}</div></div>${data.budget.map(i => `<div class="budget-row"><span>${esc(i.label)}${i.fixed?' <span class="badge">FIXED</span>':''}</span><strong>${yen(i.amount)}</strong></div>`).join('')}`;
   }
 
+  function syncTopTabs() {
+    $$('.top-tab').forEach(el => {
+      const key = el.dataset.menuTarget || el.dataset.menuView;
+      el.classList.toggle('active', key === currentNav);
+    });
+  }
+
   function setView(view, scroll=true) {
     currentView = ['plan','spots','info','budget'].includes(view) ? view : 'plan';
     sessionStorage.setItem('activeView', currentView);
     $$('.app-view').forEach(el => el.classList.toggle('active', el.dataset.view === currentView));
-    $$('.menu-item').forEach(el => el.classList.toggle('active', el.dataset.menuView === currentView && !el.dataset.menuTarget));
     if (scroll) window.scrollTo({top:0,behavior:'smooth'});
   }
 
-  function openMenu() {
-    $('#appMenu').classList.add('open');
-    $('#menuBackdrop').hidden = false;
-    requestAnimationFrame(() => $('#menuBackdrop').classList.add('open'));
-    $('#appMenu').setAttribute('aria-hidden','false');
-    $('#menuButton').setAttribute('aria-expanded','true');
-    document.body.classList.add('menu-open');
-  }
-
-  function closeMenu() {
-    $('#appMenu').classList.remove('open');
-    $('#menuBackdrop').classList.remove('open');
-    $('#appMenu').setAttribute('aria-hidden','true');
-    $('#menuButton').setAttribute('aria-expanded','false');
-    document.body.classList.remove('menu-open');
-    setTimeout(() => { if (!$('#menuBackdrop').classList.contains('open')) $('#menuBackdrop').hidden = true; }, 220);
-  }
-
-  function navigateFromMenu(button) {
+  function navigateFromTab(button) {
     const view = button.dataset.menuView;
     const targetId = button.dataset.menuTarget;
+    currentNav = targetId || view;
+    sessionStorage.setItem('activeNav', currentNav);
     setView(view, !targetId);
-    closeMenu();
+    syncTopTabs();
     if (targetId) {
       requestAnimationFrame(() => requestAnimationFrame(() => {
         const target = document.getElementById(targetId);
@@ -122,11 +113,7 @@
     }
   }
 
-  $('#menuButton').onclick = openMenu;
-  $('#menuClose').onclick = closeMenu;
-  $('#menuBackdrop').onclick = closeMenu;
-  $$('.menu-item').forEach(b => b.onclick = () => navigateFromMenu(b));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#appMenu').classList.contains('open')) closeMenu(); });
+  $$('.top-tab').forEach(b => b.onclick = () => navigateFromTab(b));
 
   $('#shareButton').onclick = async () => {
     const payload = {title:data.meta.title,text:'京都・大阪旅行 2026 の共有用トリップボード',url:location.href};
@@ -143,6 +130,7 @@
   renderSpots();
   renderBudget();
   setView(currentView, false);
+  syncTopTabs();
 
   if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('./sw.js').catch(()=>{});
 })();

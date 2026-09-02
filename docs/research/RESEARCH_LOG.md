@@ -469,3 +469,36 @@ Open questions:
 - Whether Cho-han can ever be added depends on Phase 2 / same-day transport buffer and all travelers meeting the 18+ rule; it is not part of the base route.
 
 Next target: 京都第一ホテル（next unresearched current main-line stay）
+
+## Cycle 15 — 2026-09-02 20:44 JST
+
+Target: 京都第一ホテル  
+Research depth: Deep hotel operations research / current official access, check-in/out, baggage, three-person room, breakfast, payment and facilities; 2026 Kyoto lodging tax and final-day Itami airport-bus connection analysis  
+Sources checked: 19 source entries recorded in `docs/research/venue-guides/kyoto-daiichi-hotel.md`.
+
+Key findings:
+- Current `trip-data.js` keeps 京都第一ホテル as the 2026-09-08→09-10 stay, with a 09:45–10:15 baggage-drop block on Day 2 and 08:00–08:30 checkout / baggage-drop block on Day 4.
+- Current official check-in is **15:00** and checkout is **10:00**. The hotel officially accepts luggage both before check-in and after checkout, but does **not state a post-checkout storage cutoff time** on the retrieved pages.
+- The 09-08 morning hotel stop should be only **5–15 minutes**: drop the three large bags and leave around **10:05–10:10**, with 10:15 as the absolute upper limit, because Sanjusangendo starts around 10:30 and the connection is tight.
+- Official access is about **6 minutes from Kyoto Station Hachijo West Exit** and about **2 minutes from Subway Kujo Station Exit 2**. Kujo is a useful rain/heavy-luggage alternative.
+- Official breakfast is **07:00–10:00, L.O.09:30, 1,500 yen per person**, with Japanese/Western set meals and a drink bar. If breakfast is not included in the booking, adding it for all three travelers on both mornings would total **9,000 yen**, so the 24-hour Seven-Eleven listed by the hotel as a 0-minute walk is the budget-oriented default.
+- Official Bettei Premier Twin is 28 m² and allows three guests with a third bed, but the actual booked room type is not present in `trip-data.js`; it must be checked from the reservation confirmation.
+- The `trip-data.js` value `price: 6806` has undefined unit semantics, so it is not used to calculate the exact bill or Kyoto lodging tax. Kyoto's revised lodging-tax rates have applied since 2026-03-01 and the actual tax depends on the per-person/per-night accommodation charge.
+- The final-day baggage location is strategically important. Hotel storage is free, but it can create a Kyoto Station→hotel→Kyoto Station backtrack after Eigamura. **Phase 2 should compare the hotel against Kyoto Station-side baggage storage even if the latter costs money.**
+- Current official airport-bus timetable shows Kyoto Station Hachijo Exit departures at **17:30, 17:50, 18:10** and later, with about 50–55 minutes to Itami and a 1,500-yen adult fare. For the fixed 20:05 flight, **17:30 or 17:50 is the preferred target; 18:10 is a fallback rather than Plan A** because road delay can erase the remaining buffer.
+- If using hotel baggage storage on 09-10, target baggage recovery by **17:20–17:30 or earlier**, and confirm that an evening pickup is accepted when checking out that morning.
+- With 京都第一ホテル now RESEARCHED, every current main-line attraction, major scheduled food stop and scheduled hotel in current `trip-data.js` is RESEARCHED. The next work should move to **Phase 2 day optimization** rather than researching lower-priority candidates first.
+
+Files updated:
+- `docs/research/venue-guides/kyoto-daiichi-hotel.md` — created full guide with hotel-operation five-level timing, baggage/check-in strategy, 3-person room caveat, breakfast/cost analysis, 2026 lodging-tax evidence, final-day baggage and airport-bus strategy, CUT RULE and 19-source evidence section.
+- `docs/research/venue-guides/INDEX.md` — 京都第一ホテル set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 15.
+
+Open questions:
+- Verify the actual reserved room type, reservation payment status, price semantics and whether the 2026 Kyoto lodging tax is already included.
+- Confirm on 09-10 morning that post-checkout luggage may remain until approximately 17:20–17:30; the official site confirms the service but not its cutoff time.
+- Phase 2 must compare hotel baggage storage against Kyoto Station lockers / staffed baggage storage for total travel time and flight reliability.
+- Recheck the 09-10 Kyoto Station→Itami airport-bus timetable and road/rail status on 09-09 evening / 09-10 morning.
+- Recheck hotel current notices immediately before arrival.
+
+Next target: PHASE 2 — Day 1 Osaka optimization (`docs/research/day-optimization/day1-osaka.md`)

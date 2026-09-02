@@ -24,6 +24,19 @@
     </div>
   </header>
 
+  <nav class="top-tab-shell" aria-label="メインメニュー">
+    <div class="shell">
+      <div class="top-tabs" id="topTabs">
+        <button class="top-tab active" type="button" data-menu-view="plan">日程</button>
+        <button class="top-tab" type="button" data-menu-view="spots">スポット</button>
+        <button class="top-tab" type="button" data-menu-view="info" data-menu-target="staySection">ホテル</button>
+        <button class="top-tab" type="button" data-menu-view="info" data-menu-target="foodSection">食事</button>
+        <button class="top-tab top-tab-featured" type="button" data-menu-view="info" data-menu-target="linksSection">公式リンク</button>
+        <button class="top-tab" type="button" data-menu-view="budget">予算</button>
+      </div>
+    </div>
+  </nav>
+
   <main class="shell main-shell">
     <section id="view-plan" class="app-view active" data-view="plan">
       <nav id="dayTabs" class="day-tabs" aria-label="日程"></nav>
@@ -62,28 +75,6 @@
       </section>
     </section>
   </main>
-
-  <button id="menuButton" class="menu-fab" type="button" aria-expanded="false" aria-controls="appMenu">
-    <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
-    <span>メニュー</span>
-  </button>
-
-  <div id="menuBackdrop" class="menu-backdrop" hidden></div>
-  <aside id="appMenu" class="app-menu" aria-hidden="true" aria-label="メニュー">
-    <div class="menu-handle" aria-hidden="true"></div>
-    <div class="menu-header">
-      <div><p class="kicker">NAVIGATION</p><h2>どこを見る？</h2></div>
-      <button id="menuClose" class="menu-close" type="button" aria-label="メニューを閉じる">×</button>
-    </div>
-    <div class="menu-list">
-      <button class="menu-item active" type="button" data-menu-view="plan"><span class="menu-no">01</span><span><strong>日程</strong><small>DAY 1〜4の予定</small></span><span class="menu-arrow">→</span></button>
-      <button class="menu-item" type="button" data-menu-view="spots"><span class="menu-no">02</span><span><strong>スポット</strong><small>確定・候補・遊ぶ場所</small></span><span class="menu-arrow">→</span></button>
-      <button class="menu-item" type="button" data-menu-view="info" data-menu-target="staySection"><span class="menu-no">03</span><span><strong>ホテル</strong><small>宿泊先・地図</small></span><span class="menu-arrow">→</span></button>
-      <button class="menu-item" type="button" data-menu-view="info" data-menu-target="foodSection"><span class="menu-no">04</span><span><strong>食事</strong><small>固定している店</small></span><span class="menu-arrow">→</span></button>
-      <button class="menu-item featured" type="button" data-menu-view="info" data-menu-target="linksSection"><span class="menu-no">05</span><span><strong>公式リンク集</strong><small>施設・ホテル・店をすぐ開く</small></span><span class="menu-arrow">→</span></button>
-      <button class="menu-item" type="button" data-menu-view="budget"><span class="menu-no">06</span><span><strong>予算</strong><small>固定費・標準見積り</small></span><span class="menu-arrow">→</span></button>
-    </div>
-  </aside>
 
   <script src="trip-data.js"></script>
   <script src="app.js"></script>

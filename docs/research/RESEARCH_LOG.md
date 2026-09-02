@@ -236,3 +236,36 @@ Open questions:
 - The Sagano Romantic Train remains a separate unresearched candidate and must not be inserted without its own schedule/reservation analysis.
 
 Next target: 道頓堀・なんば（next unresearched current main-line attraction; Day 1）
+
+## Cycle 8 — 2026-09-02 19:03 JST
+
+Target: 道頓堀・なんば  
+Research depth: Deep area research / Osaka Convention & Tourism Bureau, Osaka City, Osaka Metro, Nankai, Ebisu-bashi shopping street and Glico official-first, with current 2026 crowd-duration calibration  
+Sources checked: 16 source entries recorded in `docs/research/venue-guides/dotonbori-namba.md`.
+
+Key findings:
+- Current `trip-data.js` keeps 道頓堀・なんば on 2026-09-07 from 12:15 to 14:00, immediately after 551蓬莱本店 and before 心斎橋PARCO at 14:30.
+- The area is not an enclosed facility: Dotonbori streets, Ebisu Bridge and the riverwalk have no single opening hours, closure day or admission fee. Individual stores operate separately.
+- Osaka City gives Ebisu Bridge as about 200 m / 3 min from Namba Station Exit 14. The official Ebisubashi-suji shopping street is about 370 m from the Namba/Takashimaya side to Ebisu Bridge.
+- Glico's official sign page confirms the current sign is the sixth generation; illumination is sunset to 24:00. Therefore the 12:15–14:00 visit gets the landmark photo but not the neon-night effect.
+- Recommended allocation is 75–105 min. The current 105-minute slot is best used as a one-way walking route rather than broad Namba wandering.
+- Recommended sequence: 551 Honten → Hozenji Yokocho → Dotonbori street/large signs → Ebisu Bridge & Glico → short Tombori Riverwalk segment → north through Shinsaibashi-suji toward PARCO.
+- Hozenji Yokocho is about 80 m long and is a high-value 10–15 min contrast to Dotonbori, but it is the first cut when delayed.
+- The official OSAKA-INFO B&S model allocates about 150 min to a Dotonbori route including river cruise and Shinsaibashi-suji. This supports excluding a cruise from the current 105-minute slot.
+- Shinsaibashi-suji is about 580 m and OSAKA-INFO reports roughly 60,000 weekday visitors; transit speed should not be treated like an empty sidewalk.
+- 2026 visitor evidence indicates afternoon is generally less crowded than after 18:00, while current practical guidance still treats 12:00–14:30 as a restaurant lunch-queue period. Since the party has just eaten at 551, extra food is capped at one item / a 10-minute queue.
+- The hard operating rule is to finish the Dotonbori core by 14:00 and keep moving north so the 14:30 Shinsaibashi PARCO block is not compromised.
+- At 15 min delay, compress Hozenji and cut extra food. At 30 min, cut Hozenji and long riverwalk. At 60 min, keep only Dotonbori street + Ebisu Bridge/Glico. At 90+ min, take a 10–15 min Glico/Ebisu Bridge stop and proceed to PARCO.
+
+Files updated:
+- `docs/research/venue-guides/dotonbori-namba.md` — created full guide with five-level durations, 105-minute route, crowd strategy, one-way PARCO connection, three-person notes, rain plan, CUT RULE and 16-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — 道頓堀・なんば set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 8.
+
+Open questions:
+- Recheck 9/7 weather and any Dotonbori event/traffic restrictions that could affect pedestrian flow.
+- Recheck 551 Honten same-day queue and actual meal-end time; 551 will receive its own venue research cycle.
+- Recheck Shinsaibashi PARCO 9/7 event schedule and whether any timed activity changes the 14:30 connection requirement.
+- Exact crowd density at Ebisu Bridge cannot be known in advance; use actual flow rather than waiting for empty photos.
+
+Next target: 心斎橋PARCO（next unresearched current main-line attraction; Day 1）

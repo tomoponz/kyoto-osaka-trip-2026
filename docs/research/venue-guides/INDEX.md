@@ -1,6 +1,6 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 20:03 JST
+Last updated: 2026-09-02 20:15 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
@@ -13,7 +13,7 @@ Last updated: 2026-09-02 20:03 JST
 | 龍安寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/core sights / MEDIUM for crowd-duration and payment-method estimates | Current trip-data moved it to Day 2 afternoon; re-evaluate connection/timing in Day optimization |
 | 嵐山・竹林の小径 | RESEARCHED | 2026-09-02 | HIGH for official access/basic-area facts / MEDIUM for crowd-duration and same-day lunch estimates | Current trip-data moved it to Day 4 morning before Eigamura; re-evaluate duration/connection in Day optimization |
 | 嵯峨野トロッコ列車 | NOT_STARTED | — | — | Yes |
-| 東映太秦映画村 | NOT_STARTED | — | — | Yes — current Day 4 main line; research next |
+| 東映太秦映画村 | RESEARCHED | 2026-09-02 | HIGH for official current hours/fees/access/attractions/services / MEDIUM for exact 9/10 show schedule, crowd and duration estimates | Recheck 9/10 show schedule, attraction closures/waits, weather, shooting-gate access, JR operation and 16:40 exit feasibility on 2026-09-09/10 |
 | teamLab Biovortex Kyoto | NOT_STARTED | — | — | Yes |
 | 鞍馬 → 貴船 山越え | NOT_STARTED | — | — | Yes |
 | 551蓬莱 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current prices/menu / MEDIUM for queue-duration and reservation behavior | Recheck 9/7 same-day queue, temporary closure, limited-item stock and payment options on 2026-09-07 |
@@ -21,7 +21,7 @@ Last updated: 2026-09-02 20:03 JST
 | 心斎橋PARCO | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current floors/events / MEDIUM for crowd-duration estimates | Recheck 9/7 event entry rules, Disney Store restrictions, temporary hours and fatigue on 2026-09-07 |
 | 道頓堀・なんば | RESEARCHED | 2026-09-02 | HIGH for official access/area facts / MEDIUM for crowd-duration and shop-queue estimates | Recheck weather, any event/traffic restrictions, 551 queue and Day 1 fatigue on 2026-09-07 |
 | ポルタイン弁天町 | RESEARCHED | 2026-09-02 | HIGH for official access/breakfast/luggage/facilities / MEDIUM for check-in-out and breakfast depletion timing | Recheck 9/7 luggage policy, current breakfast, reservation details and JR/Metro operation on 2026-09-07/08 |
-| 京都第一ホテル | NOT_STARTED | — | — | Yes |
+| 京都第一ホテル | NOT_STARTED | — | — | Yes — next unresearched current main-line stay |
 
 ## Status definitions
 

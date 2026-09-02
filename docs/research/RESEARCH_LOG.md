@@ -39,7 +39,7 @@ Research depth: Deep venue research / Tier A official-first with current 2026 Ky
 Sources checked: 13 source entries recorded in `docs/research/venue-guides/kiyomizu-dera.md`.
 
 Key findings:
-- Current `trip-data.js` keeps 清水寺 on 2026-09-08 from 11:00 to 12:20, followed by 二年坂・三年坂 / lunch and then 14:10 伏見稲荷.
+- `trip-data.js` keeps 清水寺 on 2026-09-08 from 11:00 to 12:20, followed by 二年坂・三年坂 / lunch and then 14:10 伏見稲荷.
 - Kiyomizu-dera's official 2026 calendar sets 2026-09-08 opening hours at 06:00–18:00; Kyoto City tourism information lists the temple as open daily.
 - Current adult admission is 500 yen. Some older/third-party pages still show 400 yen, so those values are outdated.
 - Recent 2026 visit guides converge around 60–90 min for a normal circuit, 30–45 min for a compressed Main Hall/Stage visit, and up to about 2 hours for a slow visit. Therefore the existing 80-minute slot is reasonable.
@@ -434,3 +434,38 @@ Open questions:
 - Recheck actual Kyoto First Hotel→Sanjusangendo and Sanjusangendo→Kiyomizu road/bus conditions on the morning of 09-08.
 
 Next target: 東映太秦映画村（next unresearched current main-line venue; Day 4）
+
+## Cycle 14 — 2026-09-02 20:15 JST
+
+Target: 東映太秦映画村  
+Research depth: Deep venue research / current official 2026 hours, tickets, attractions, show schedules, access, services, R-18 content and recent late-August/September crowd reports; analyzed specifically against the 20:05 Itami flight constraint  
+Sources checked: 21 source entries recorded in `docs/research/venue-guides/toei-uzumasa-eigamura.md`.
+
+Key findings:
+- Current `trip-data.js` schedules 東映太秦映画村 on 2026-09-10 from **13:00 to 16:50**, after Arashiyama lunch and before baggage pickup / Kyoto→Itami transfer. The 20:05 Itami flight is fixed.
+- Current official hours are **10:00–21:00**, with some areas closing at 18:00. Tuesday is the normal closure day except holidays/March/April/November; 09-10 is Thursday and therefore a normal operating day under current rules.
+- Current adult admission is **2,800 yen**. The attraction pass is **1,500 yen**, sold until 16:00 (possibly earlier when crowded). Haunted house 800 yen + NINJA BATTLE 800 yen already exceeds the pass price, so the pass is recommended when both are planned.
+- Recommended trip allocation is **3h30m–3h50m**. The existing 13:00–16:50 slot matches a practical 3–4 hour standard visit and should not be extended into the evening.
+- The **new haunted house reopened 2026-08-11** and is the highest-priority paid attraction for this group. A 2026-08-29 visitor reported being unable to enter because it was full; therefore check its reception immediately after entry instead of leaving it until late afternoon.
+- Current generic official schedule lists NINJA MISSION at 11:30 / 14:30 / 16:30 for about 15 minutes. Other September date-specific official schedules also show 14:30, but the exact 2026-09-10 date page could not be retrieved in this research. Use **14:30 as a candidate anchor only**, and verify the 9/10 schedule on 9/9 evening or 9/10 morning.
+- Evangelion Kyoto Base is included in admission, runs to 18:00 with 17:15 final reception, and provides a high-value fallback when paid-attraction waits are long.
+- The current Shinsengumi puzzle takes **60–120 min**. Despite the group's interest in puzzles, it is cut from the base route because it would consume too much of the final-day 3h50m window.
+- R-18 Cho-han gambling is attractive for an adult group but its current early round can run **16:25–16:50**, exactly colliding with the itinerary's hard exit. It is excluded from the base route. The R-18 torture-house program starts at **17:00** and is completely incompatible with the 20:05 flight.
+- Recommended gate strategy is **Main Gate IN → Shooting-Studio Gate OUT**: the main gate is 5 min from Randen Uzumasa-Koryuji on the Arashiyama side, while the shooting gate is 5 min from JR Uzumasa for the return toward Kyoto. Shooting-gate exit remains available until 18:00.
+- Large luggage should stay at Kyoto First Hotel / Kyoto Station. The park has lockers but no charging spot or mobile-battery rental, so a personal power bank is required.
+- Hard operational rule: **16:20 stop joining new queues; 16:35–16:40 target shooting-gate exit; 16:50 absolute upper limit.** Flight buffer never yields to one more attraction.
+
+Files updated:
+- `docs/research/venue-guides/toei-uzumasa-eigamura.md` — created complete guide with five-level duration estimates, 13:00–16:50 optimized route, pass break-even rules, haunted-house-first strategy, show/EVA/ninja priorities, R-18 exclusions, gate strategy, three-person notes, rain/heat plan, CUT RULE and 21-source evidence section.
+- `docs/research/venue-guides/INDEX.md` — 東映太秦映画村 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 14.
+
+Open questions:
+- Recheck the exact **2026-09-10 show schedule** on 09-09 evening / 09-10 morning; do not assume 14:30 NINJA MISSION without the date-specific page.
+- Recheck haunted-house / NINJA BATTLE / maze same-day reception and any attraction suspension; exact waits cannot be known in advance.
+- Recheck 09-10 weather and heat/rain conditions.
+- Recheck that the shooting-studio gate is operating normally for a 16:35–16:40 exit.
+- Recheck JR Uzumasa→Kyoto operation and the full Kyoto→Itami transfer before entering the park.
+- Whether Cho-han can ever be added depends on Phase 2 / same-day transport buffer and all travelers meeting the 18+ rule; it is not part of the base route.
+
+Next target: 京都第一ホテル（next unresearched current main-line stay）

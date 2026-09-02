@@ -1,6 +1,6 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 20:15 JST
+Last updated: 2026-09-02 20:44 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ Last updated: 2026-09-02 20:15 JST
 | 心斎橋PARCO | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current floors/events / MEDIUM for crowd-duration estimates | Recheck 9/7 event entry rules, Disney Store restrictions, temporary hours and fatigue on 2026-09-07 |
 | 道頓堀・なんば | RESEARCHED | 2026-09-02 | HIGH for official access/area facts / MEDIUM for crowd-duration and shop-queue estimates | Recheck weather, any event/traffic restrictions, 551 queue and Day 1 fatigue on 2026-09-07 |
 | ポルタイン弁天町 | RESEARCHED | 2026-09-02 | HIGH for official access/breakfast/luggage/facilities / MEDIUM for check-in-out and breakfast depletion timing | Recheck 9/7 luggage policy, current breakfast, reservation details and JR/Metro operation on 2026-09-07/08 |
-| 京都第一ホテル | NOT_STARTED | — | — | Yes — next unresearched current main-line stay |
+| 京都第一ホテル | RESEARCHED | 2026-09-02 | HIGH for official access/check-in-out/luggage/breakfast/facilities/payment / MEDIUM for booked room, post-checkout luggage cutoff and final-day baggage-return timing | Recheck booking room/price/tax, 9/10 17:20–17:30 baggage pickup permission, and Kyoto→Itami bus on 2026-09-08/10 |
 
 ## Status definitions
 

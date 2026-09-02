@@ -134,3 +134,37 @@ Open questions:
 - Whether Yotsutsuji is practical depends on actual arrival time, crowd flow, heat/rain and the slowest traveler's condition.
 
 Next target: 金閣寺（next unreearched current main-line facility, scheduled for Day 4）
+
+## Cycle 5 — 2026-09-02 18:36 JST
+
+Target: 金閣寺（鹿苑寺）  
+Research depth: Deep venue research / Kinkakuji official-first with Kyoto City access guidance, current 2026 crowd-duration reports and Day 4 Ryoanji connection analysis  
+Sources checked: 16 source entries recorded in `docs/research/venue-guides/kinkakuji.md`.
+
+Key findings:
+- Current `trip-data.js` keeps 金閣寺 on 2026-09-10 from 09:30 to 10:40, followed by 龍安寺 at 11:10.
+- Current official hours are 09:00–17:00, year-round; adult admission is 500 yen and ordinary visitation does not require advance reservation.
+- Kyoto City and the official site both support the current early-morning placement. A 2026-05-02 visitor arriving at 09:30 reported only moderate crowding and a stay under one hour.
+- Recent 2026 practical sources converge around 40–60 min for a standard circuit and 60–90 min when adding photography, goshuin, tea or shopping. Therefore the existing 70-minute slot is well sized.
+- The essential sequence is reception → Kinkaku / Kyokochi front view → Rikushu-no-matsu → garden route → Ryumon-taki → Anmintaku → Sekkatei → Fudodo → optional goshuin/shop/tea.
+- Kinkakuji's official FAQ states there is **no luggage storage or locker facility**. Large luggage must be left at Kyoto First Hotel or another external locker before the visit.
+- Official photography rules are unusually strict: small-camera snapshots for personal enjoyment are allowed, but shooting intended for publication to third parties, including SNS, is prohibited. This needs to be rechecked and shared among the three travelers.
+- The official site does not clearly state the admission-fee payment method. A 2026 visitor report says cash only, while 2026 cashless-payment rollout information indicates Kinkakuji may be added later. Until the temple itself confirms implementation, carry at least 500–1,000 yen in cash.
+- Kyoto City's transport guidance recommends subway + bus rather than taking route 205 directly from Kyoto Station because the direct bus has many stops and can be heavily delayed by congestion. From the Kujo/Kyoto First Hotel area, subway toward Kitaoji then bus is the base strategy.
+- For the next leg, 2026-09-10 is Thursday. Current city-bus timetable shows route 59 from Kinkakuji-michi toward Ryoanji at 10:08, 10:23, 10:38 and 10:53. If the party exits around 10:40, waiting for 10:53 is not clearly faster than walking.
+- The Kinukake-no-michi guide gives Kinkakuji→Ryoanji as about 18 minutes on foot. Therefore **walking is the default after Kinkakuji when weather and stamina are acceptable; route 59 is the rain/heat/fatigue fallback**.
+- At 15 min delay, keep the 10:40 exit and cut shop/tea. At 30 min delay, use a 40-minute minimum circuit. At 60+ min delay, preserve Kinkakuji with a compressed visit and cut later optional time rather than compromising the 20:05 flight constraint.
+
+Files updated:
+- `docs/research/venue-guides/kinkakuji.md` — created complete venue guide with 5-level durations, 70-minute route, crowd strategy, photo/luggage/payment rules, Kinkakuji→Ryoanji connection, three-person notes, CUT RULE and source evidence.
+- `docs/research/venue-guides/INDEX.md` — 金閣寺 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 5.
+
+Open questions:
+- Recheck Kinkakuji official notices and event page on 2026-09-09 evening / 09-10 morning.
+- Confirm whether cashless payment has actually been enabled at Kinkakuji's ordinary admission desk; current official Kinkakuji pages do not say.
+- Recheck the temple's SNS/publication photography rule immediately before travel in case wording changes.
+- Recheck 9/10 weather and choose walking vs route 59 from Kinkakuji to Ryoanji accordingly.
+- Recheck route 59 real-time operation; traffic delays can change the walk-vs-bus decision.
+
+Next target: 龍安寺（next unreearched current main-line facility, immediately after 金閣寺 on Day 4）

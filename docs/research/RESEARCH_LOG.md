@@ -502,3 +502,32 @@ Open questions:
 - Recheck hotel current notices immediately before arrival.
 
 Next target: PHASE 2 — Day 1 Osaka optimization (`docs/research/day-optimization/day1-osaka.md`)
+
+## Cycle 16 — 2026-09-02 21:02 JST
+
+Target: PHASE 2 — Day 1 Osaka optimization  
+Research depth: Deep day optimization / current airport bus, rail/Metro routing, baggage handoff, 551 queue gate, Dotonbori→PARCO walking sequence, rain/fatigue/delay handling  
+Sources checked: 16 source entries recorded in `docs/research/day-optimization/day1-osaka.md`.
+
+Key findings:
+- Current `trip-data.js` Day 1 sequence remains Itami→Shin-Osaka→Bentencho→551→Dotonbori→Shinsaibashi PARCO→Bentencho and is directionally sound.
+- Official current Itami→Shin-Osaka bus departs 08:55 then 09:25 after the 08:45 flight arrival; because 08:55 allows only 10 min for deplaning/baggage/H meetup, 09:25→09:50 is the base connection and 08:55 is bonus only.
+- After M meetup, JR Shin-Osaka→Osaka→Bentencho is the base: current route data ~18–20 min / 200 yen / one transfer and Portainn is immediately by JR central south exit.
+- Do not consume the current 10:15–11:20 baggage block. Target 10:40–10:55 drop and hotel departure 10:50–11:00.
+- Bentencho→Namba is best by Osaka Metro Chuo→Hommachi→Midosuji (~15–17 min / 240 yen current example); it leaves the party near 551's Namba Exit 11 access.
+- Keep 11:45 seating gate / 12:20 hard exit at 551.
+- 551→Dotonbori→PARCO should be one continuous walk; do not take subway from Namba to Shinsaibashi, because the Ebisu/Dotonbori/Shinsaibashi-suji corridor is itself the sightseeing route.
+- Base city transport including airport bus is ~1,280 yen/person. Osaka Metro weekday one-day pass is 820 yen while base Metro spend is ~480 yen, so pay-as-you-go IC is preferred.
+- 16:30 is the operational end of Day 1 mainline. Umeda is optional only if all three are energetic; otherwise return to Portainn and protect Day 2 stamina.
+- Delay: at +30 min switch 551 to takeout when needed; +60 cut side sights/Umeda; +90 keep only fast 551 if short line, Dotonbori core, 60–90 min PARCO, hotel.
+
+Files updated:
+- `docs/research/day-optimization/day1-osaka.md` — created.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 16.
+
+Open questions:
+- Whether the Itami flight has checked baggage materially affects 08:55 bus feasibility.
+- Recheck 9/7 flight, bus, JR, Metro, 551 queue, PARCO entry rules and weather.
+- Umeda remains same-day optional, not part of fixed base route.
+
+Next target: PHASE 2 — Day 2 Kyoto East optimization (`docs/research/day-optimization/day2-kyoto-east.md`)

@@ -1,11 +1,11 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 19:57 JST
+Last updated: 2026-09-02 20:03 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
 | Nintendo Museum | RESEARCHED | 2026-09-02 | HIGH for official facts / MEDIUM for crowd-duration estimates | Recheck official notices, hours, access, and workshop availability on 2026-09-08/09 |
-| 三十三間堂 | NOT_STARTED | — | — | Yes — newly added to current Day 2 main line; research next |
+| 三十三間堂 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/core sights / MEDIUM for duration, crowd and payment-method estimates | Recheck 9/8 official notices/culture events, payment method, same-day crowd and connections to/from Kyoto First Hotel/Kiyomizu |
 | 清水寺 | RESEARCHED | 2026-09-02 | HIGH for official facts / MEDIUM for crowd-duration estimates | Recheck official notices, comfort map, transport, Jishu Shrine and Tainai-meguri on 2026-09-08 |
 | 二年坂・三年坂 | RESEARCHED | 2026-09-02 | HIGH for official area/access facts / MEDIUM for crowd-duration and lunch estimates | Recheck comfort map, rain, lunch queues and Keihan timetable on 2026-09-08 |
 | 伏見稲荷大社 | RESEARCHED | 2026-09-02 | HIGH for official access-hours-rules facts / MEDIUM for crowd-duration estimates | Current trip-data now uses it as optional Day 3 short course; re-evaluate duration in Day optimization |
@@ -13,7 +13,7 @@ Last updated: 2026-09-02 19:57 JST
 | 龍安寺 | RESEARCHED | 2026-09-02 | HIGH for official hours/fees/access/core sights / MEDIUM for crowd-duration and payment-method estimates | Current trip-data moved it to Day 2 afternoon; re-evaluate connection/timing in Day optimization |
 | 嵐山・竹林の小径 | RESEARCHED | 2026-09-02 | HIGH for official access/basic-area facts / MEDIUM for crowd-duration and same-day lunch estimates | Current trip-data moved it to Day 4 morning before Eigamura; re-evaluate duration/connection in Day optimization |
 | 嵯峨野トロッコ列車 | NOT_STARTED | — | — | Yes |
-| 東映太秦映画村 | NOT_STARTED | — | — | Yes — current Day 4 main line |
+| 東映太秦映画村 | NOT_STARTED | — | — | Yes — current Day 4 main line; research next |
 | teamLab Biovortex Kyoto | NOT_STARTED | — | — | Yes |
 | 鞍馬 → 貴船 山越え | NOT_STARTED | — | — | Yes |
 | 551蓬莱 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current prices/menu / MEDIUM for queue-duration and reservation behavior | Recheck 9/7 same-day queue, temporary closure, limited-item stock and payment options on 2026-09-07 |

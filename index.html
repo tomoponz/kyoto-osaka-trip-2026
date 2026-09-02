@@ -48,9 +48,9 @@
 
     <section id="view-info" class="app-view" data-view="info">
       <section class="info-grid">
-        <article class="panel"><div class="section-heading compact"><div><p class="kicker">STAYS</p><h2>ホテル</h2></div></div><div id="stayCards" class="stack"></div></article>
-        <article class="panel"><div class="section-heading compact"><div><p class="kicker">FOOD</p><h2>食事の固定枠</h2></div></div><div id="foodCards" class="stack"></div></article>
-        <article class="panel info-links-panel"><div class="section-heading compact"><div><p class="kicker">QUICK LINKS</p><h2>公式リンク集</h2></div></div><div id="officialLinks" class="official-links"></div></article>
+        <article id="staySection" class="panel info-anchor"><div class="section-heading compact"><div><p class="kicker">STAYS</p><h2>ホテル</h2></div></div><div id="stayCards" class="stack"></div></article>
+        <article id="foodSection" class="panel info-anchor"><div class="section-heading compact"><div><p class="kicker">FOOD</p><h2>食事の固定枠</h2></div></div><div id="foodCards" class="stack"></div></article>
+        <article id="linksSection" class="panel info-links-panel info-anchor"><div class="section-heading compact"><div><p class="kicker">QUICK LINKS</p><h2>公式リンク集</h2></div></div><div id="officialLinks" class="official-links"></div></article>
       </section>
       <section class="notice"><strong>旅行直前チェック</strong><p>交通時刻・臨時休館・営業時間は変更される可能性あり。このサイトを計画のハブにして、最終確認だけ公式サイトで行う。</p></section>
     </section>
@@ -63,12 +63,27 @@
     </section>
   </main>
 
-  <nav class="bottom-nav" aria-label="メインナビゲーション">
-    <button class="nav-item active" type="button" data-view-target="plan"><span>日程</span></button>
-    <button class="nav-item" type="button" data-view-target="spots"><span>スポット</span></button>
-    <button class="nav-item" type="button" data-view-target="info"><span>情報</span></button>
-    <button class="nav-item" type="button" data-view-target="budget"><span>予算</span></button>
-  </nav>
+  <button id="menuButton" class="menu-fab" type="button" aria-expanded="false" aria-controls="appMenu">
+    <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span>メニュー</span>
+  </button>
+
+  <div id="menuBackdrop" class="menu-backdrop" hidden></div>
+  <aside id="appMenu" class="app-menu" aria-hidden="true" aria-label="メニュー">
+    <div class="menu-handle" aria-hidden="true"></div>
+    <div class="menu-header">
+      <div><p class="kicker">NAVIGATION</p><h2>どこを見る？</h2></div>
+      <button id="menuClose" class="menu-close" type="button" aria-label="メニューを閉じる">×</button>
+    </div>
+    <div class="menu-list">
+      <button class="menu-item active" type="button" data-menu-view="plan"><span class="menu-no">01</span><span><strong>日程</strong><small>DAY 1〜4の予定</small></span><span class="menu-arrow">→</span></button>
+      <button class="menu-item" type="button" data-menu-view="spots"><span class="menu-no">02</span><span><strong>スポット</strong><small>確定・候補・遊ぶ場所</small></span><span class="menu-arrow">→</span></button>
+      <button class="menu-item" type="button" data-menu-view="info" data-menu-target="staySection"><span class="menu-no">03</span><span><strong>ホテル</strong><small>宿泊先・地図</small></span><span class="menu-arrow">→</span></button>
+      <button class="menu-item" type="button" data-menu-view="info" data-menu-target="foodSection"><span class="menu-no">04</span><span><strong>食事</strong><small>固定している店</small></span><span class="menu-arrow">→</span></button>
+      <button class="menu-item featured" type="button" data-menu-view="info" data-menu-target="linksSection"><span class="menu-no">05</span><span><strong>公式リンク集</strong><small>施設・ホテル・店をすぐ開く</small></span><span class="menu-arrow">→</span></button>
+      <button class="menu-item" type="button" data-menu-view="budget"><span class="menu-no">06</span><span><strong>予算</strong><small>固定費・標準見積り</small></span><span class="menu-arrow">→</span></button>
+    </div>
+  </aside>
 
   <script src="trip-data.js"></script>
   <script src="app.js"></script>

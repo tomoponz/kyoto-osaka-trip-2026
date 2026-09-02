@@ -1,0 +1,1 @@
+# kyoto-osaka-trip-2026

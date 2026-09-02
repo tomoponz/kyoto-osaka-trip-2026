@@ -168,3 +168,37 @@ Open questions:
 - Recheck route 59 real-time operation; traffic delays can change the walk-vs-bus decision.
 
 Next target: 龍安寺（next unreearched current main-line facility, immediately after 金閣寺 on Day 4）
+
+## Cycle 6 — 2026-09-02 18:43 JST
+
+Target: 龍安寺  
+Research depth: Deep venue research / Ryoanji official-first with Kyoto City/Prefecture culture-access data, current 2026 visitor calibration, and Day 4 Arashiyama connection analysis  
+Sources checked: 17 source entries recorded in `docs/research/venue-guides/ryoanji.md`.
+
+Key findings:
+- Current `trip-data.js` keeps 龍安寺 on 2026-09-10 from 11:10 to 12:20, immediately after 金閣寺 and before the 12:20–13:20 lunch/Arashiyama transfer block.
+- Current official hours for September are 08:00–17:00, year-round closure is not listed, and adult admission is 600 yen. Official goshuin reception is 09:00–16:00.
+- The current 70-minute slot is well sized. Recommended allocation is 55–70 min; a compressed stone-garden-focused visit can be 25–30 min, while relaxed viewing can extend to 80–100 min.
+- The key experiential recommendation is to reserve **15–20 minutes actually seated at the rock garden**, not use the whole visit for walking and photos.
+- Ryoanji's official site highlights four mysteries of the rock garden. The perspective trick in the right-hand wall—lowering toward the far end—is a concrete observation target that makes the visit more interactive for this group.
+- Essential route: entrance / Kyoyochi → Hojo → rock garden → Chisoku-no-tsukubai → Ryoanji-gaki / garden details → Kyoyochi → exit.
+- 2026-09-10 is Thursday. Kyoto Prefecture's current listing for the temple restaurant Seigenin says Wednesday/Thursday closed. **Do not plan lunch inside Ryoanji on this trip.**
+- The 2026 special evening viewing of all 92 Hosokawa Morihiro `Unryuzu` panels begins on 09-26, so the trip date 09-10 is before that special program. Do not inflate the visit time expecting that event.
+- For the next leg, Randen is the predictable base option: Ryoanji Station → Katabiranotsuji → Arashiyama. Randen's official material gives a 250-yen flat adult fare and basic daytime 10-minute intervals; current route searches show the rail portion at roughly 20–23 min.
+- Including the official 7–8 min temple-to-station walk and transfer/waiting, allow about 30–40 min from Ryoanji exit to Arashiyama. Therefore the existing 12:20–13:20 `lunch / Arashiyama` block leaves only a short lunch window and should not absorb a late temple exit.
+- Ordinary admission payment methods are not clearly stated by the temple's official pages. Carry cash rather than assuming card/QR support.
+- Current official and Kyoto tourism sources agree on 600-yen adult admission; some recently updated third-party pages still show 500 yen, so those values are treated as stale.
+
+Files updated:
+- `docs/research/venue-guides/ryoanji.md` — created full venue guide with five-level durations, 70-minute route, rock-garden viewing strategy, Seigenin Thursday closure, Randen connection, three-person notes, CUT RULE, preparation and 17-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — 龍安寺 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 6.
+
+Open questions:
+- Recheck Ryoanji official notices on 2026-09-09 evening / 09-10 morning for temporary restrictions or events.
+- Confirm the ordinary admission desk payment method; current official pages do not specify it.
+- Recheck 09-10 weather before choosing the Kinkakuji→Ryoanji walk vs route 59.
+- Recheck Seigenin same-day status even though the current official tourism listing says Thursday closed.
+- Recheck Randen operation and exact Ryoanji→Arashiyama departure times before leaving the temple.
+
+Next target: 嵐山・竹林の小径（next unresearched current main-line facility, immediately after 龍安寺 on Day 4）

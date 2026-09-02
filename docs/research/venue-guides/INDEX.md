@@ -1,6 +1,6 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 19:31 JST
+Last updated: 2026-09-02 19:46 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
@@ -19,7 +19,7 @@ Last updated: 2026-09-02 19:31 JST
 | 本家 第一旭 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/menu/payment / MEDIUM for queue-duration and reservation behavior | Recheck 9/8 same-day queue, temporary closure, student-discount conditions and ticketing flow on 2026-09-08 |
 | 心斎橋PARCO | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current floors/events / MEDIUM for crowd-duration estimates | Recheck 9/7 event entry rules, Disney Store restrictions, temporary hours and fatigue on 2026-09-07 |
 | 道頓堀・なんば | RESEARCHED | 2026-09-02 | HIGH for official access/area facts / MEDIUM for crowd-duration and shop-queue estimates | Recheck weather, any event/traffic restrictions, 551 queue and Day 1 fatigue on 2026-09-07 |
-| ポルタイン弁天町 | NOT_STARTED | — | — | Yes |
+| ポルタイン弁天町 | RESEARCHED | 2026-09-02 | HIGH for official access/breakfast/luggage/facilities / MEDIUM for check-in-out and breakfast depletion timing | Recheck 9/7 luggage policy, current breakfast, reservation details and JR/Metro operation on 2026-09-07/08 |
 | 京都第一ホテル | NOT_STARTED | — | — | Yes |
 
 ## Status definitions

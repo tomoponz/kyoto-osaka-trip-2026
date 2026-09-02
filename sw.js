@@ -1,4 +1,4 @@
-const CACHE='kyoto-osaka-trip-v2';
+const CACHE='kyoto-osaka-trip-v3';
 const CORE=['./','./index.html','./styles.css','./venue-guide.css','./trip-data.js','./app.js','./venue-guide.js','./data/research/venues/index.json'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));self.skipWaiting();});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});

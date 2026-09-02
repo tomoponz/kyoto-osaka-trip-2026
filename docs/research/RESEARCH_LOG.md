@@ -621,3 +621,32 @@ Open questions:
 - Confirm whether the return flight uses checked baggage; that materially affects how acceptable the 18:10 emergency bus would be.
 
 Next target: PHASE 3 — `docs/research/TRIP_TIPS.md`
+
+## Cycle 20 — 2026-09-02 22:25 JST
+
+Target: PHASE 3 — Trip-wide practical tips / Research completion  
+Research depth: Cross-day synthesis / current `trip-data.js` + all researched venue guides + Day 1–4 optimization + current official Web re-verification of Nintendo Museum, Kyoto congestion tools, Kyoto Daiichi Hotel baggage, Eigamura, 551 and Kiyomizu operations  
+Sources checked: 12 current official Web sources re-verified in `docs/research/TRIP_TIPS.md`, plus all internal venue/day research files.
+
+Key findings:
+- Created **20 trip-specific operational tips** rather than generic travel advice, centered on fixed-event protection, queue decision gates, one-way routing, three-person parallelization, baggage hubs, weather, fatigue and delay cuts.
+- Day 1: treat the 09:25 Itami→Shin-Osaka bus as the base, leave Portainn quickly after baggage drop, use an 11:45 551 seating gate, and walk Dotonbori→PARCO as one continuous sightseeing route.
+- Day 2: use Kyoto Daiichi Hotel only as a fast baggage hub, cut Sanjusangendo first under severe morning delay, treat Kiyomizu→Kinkakuji taxi as a three-person time-insurance option, and preserve seated rock-garden time at Ryoanji.
+- Day 3: Fushimi Inari remains optional and summit-free, use JR Inari→JR Ogura directly, eat before Nintendo Museum, arrive 12:05–12:15, and use the party's 10-coin allocations independently rather than forcing all three into every queue.
+- Day 4: limit Arashiyama to Bamboo Grove plus one add-on, protect 16:35–16:40 Eigamura exit, and reverse-plan from the 17:50 Kyoto Station Hachijo Exit airport bus.
+- Added one common +15/+30/+60/+90 delay rule, three-person operating rules, baggage rules, rain rules and date-by-date preflight recheck lists.
+- Current Web re-verification still supports Nintendo's QR+ID / 10-coin / 12–15 café-crowd rules, Kyoto City's 2026-08-17 congestion map coverage, Kyoto Daiichi Hotel post-checkout baggage service, Eigamura's current fee/pass/haunted-house rules, and 551 Honten's 9/7 normal-operation expectation.
+- Remaining uncertainties are explicitly classified as **same-day variables**, not filled with invented certainty.
+- Current main-line venues, major food stops and hotels are all RESEARCHED; Day 1–4 optimization is complete; `TRIP_TIPS.md` now exists. The requested Research Data baseline therefore meets the stated completion conditions.
+
+Files updated:
+- `docs/research/TRIP_TIPS.md` — created 20 trip-wide operational tips, common CUT RULE, three-person/baggage/rain rules, date-specific recheck lists, current Web evidence and remaining uncertainty section.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 20.
+
+Open questions:
+- Same-day queues, weather, transport disruption and temporary closures remain inherently unresolved until travel dates.
+- Confirm 9/10 evening baggage pickup cutoff directly with Kyoto Daiichi Hotel.
+- Recheck exact Nintendo Museum notices, Eigamura 9/10 show schedule and Kyoto→Itami bus operation immediately before use.
+- Verify actual airline checked-baggage cutoff from the booking/carrier before Day 4.
+
+Next target: **RESEARCH_COMPLETE** — no further broad research. Continue only with travel-date verification or Site Integration after user review.

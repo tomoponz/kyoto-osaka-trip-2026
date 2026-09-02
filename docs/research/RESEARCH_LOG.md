@@ -334,3 +334,38 @@ Open questions:
 - Limited char-siu bun/anman availability is same-day and secondary to the main itinerary.
 
 Next target: 本家 第一旭 本店（next unresearched scheduled food stop on the current main line）
+
+## Cycle 11 — 2026-09-02 19:31 JST
+
+Target: 本家 第一旭 本店  
+Research depth: Deep food-stop research / official current hours, menu, payment and ingredient information, Kyoto First Hotel connection, plus 2026 queue reports across morning/lunch/evening  
+Sources checked: 14 source entries recorded in `docs/research/venue-guides/honke-daiichiasahi-honten.md`.
+
+Key findings:
+- Current `trip-data.js` schedules 本家 第一旭 本店 at about 17:40 on 2026-09-08, after the 16:30–17:20 hotel rest and before a free Kyoto Station evening block.
+- Current official hours are **06:00–25:00**, Thursday closed. 09-08 is Tuesday and therefore a normal operating day unless a temporary notice appears.
+- Official current menu prices include ramen 980 yen, student ramen 830 yen, chashu ramen 1,180 yen, special ramen 1,230 yen and gyoza 350 yen. The store has 31 seats.
+- Official payment support is broad: cash, credit cards, electronic money and QR payments.
+- The official site gives JR Kyoto Station as a 4-minute walk. Kyoto First Hotel gives its own location as about 6 minutes from Kyoto Station Hachijo West Exit, so the existing hotel-rest-to-dinner connection is geographically reasonable; exact door-to-door time still depends on station crossing.
+- Recent 2026 evidence shows **weekday 17–18h is not queue-free**. Reports include around 10–25 people and roughly 30-minute waits at 17:00–18:00.
+- Recommended allocation is 60–80 min including queue and meal. The current 17:40 target is reasonable, but the operational plan should budget about 30 minutes of waiting rather than assuming immediate seating.
+- 2026 queue evidence also shows 40–60 min at weekday lunch, about 40 min on a Monday at 10:30, and 60–70+ min in some weekend afternoon/evening cases. Queue risk persists throughout the day.
+- Recent visitor reports describe a ticket-purchase flow controlled by staff while customers are in line. The party should follow same-day instructions rather than having one traveler independently leave the queue to buy tickets.
+- For three travelers, do not insist on three contiguous seats if staff offers split or shared seating; seating preference is lower priority than reducing the standing wait after a walking-heavy day.
+- Official pages list an 830-yen student ramen but do not explain qualification/document rules. Carry student IDs and confirm on site rather than assuming eligibility.
+- Third-party reservation information is inconsistent: one current listing says reservations unavailable while another offers a two-person seat-only booking page. The official site does not clarify general reservations, so this three-person trip should **not rely on a reservation**.
+- If the estimated wait is 60+ minutes and the group is already fatigued, cutting the restaurant is reasonable because the next day contains the fixed Nintendo Museum visit. The line is the main cost, not the food price.
+
+Files updated:
+- `docs/research/venue-guides/honke-daiichiasahi-honten.md` — created full guide with five-level duration estimates, 17:40 queue strategy, current official menu/payment data, three-person seating/order rules, CUT RULE, stale-hours warning and 14-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — 本家 第一旭 本店 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 11.
+
+Open questions:
+- Recheck the official news/store page on 2026-09-08 for any temporary closure or hours change.
+- Actual 17:20–17:40 queue length is unknowable in advance; same-day line is operational authority.
+- Confirm the student-ramen eligibility/student-ID requirement on site.
+- Confirm the current ticket-purchase sequence from staff before leaving the queue.
+- Reservation status remains contradictory in third-party data and should not be treated as available without direct confirmation.
+
+Next target: ポルタイン弁天町（next unresearched scheduled hotel / main-line stay）

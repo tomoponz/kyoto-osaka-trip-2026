@@ -72,7 +72,7 @@ Research depth: Deep area research / Kyoto City official history-preservation-cr
 Sources checked: 16 source entries recorded in `docs/research/venue-guides/ninenzaka-sannenzaka.md`.
 
 Key findings:
-- Current `trip-data.js` keeps the area on 2026-09-08 from 12:20 to 13:20 as `二年坂・三年坂 / 昼食`, immediately after 清水寺 and before 14:10 伏見稲荷.
+- `trip-data.js` keeps the area on 2026-09-08 from 12:20 to 13:20 as `二年坂・三年坂 / 昼食`, immediately after 清水寺 and before 14:10 伏見稲荷.
 - This is not an enclosed facility. Kyoto official pages list no single area-wide opening hours or closure day; shops and restaurants operate individually.
 - The streets are part of the Sanneizaka Important Preservation District for Groups of Traditional Buildings, where stone steps, stone paving, late-Edo to Taisho machiya, Yasaka Pagoda and surrounding temples form one historic landscape.
 - For this trip, 45–60 min is a reasonable walking/browsing allocation. A seated lunch plus relaxed browsing is better treated as 75–90 min, so the existing 60-minute combined slot must be run as a compressed plan.
@@ -107,7 +107,7 @@ Research depth: Deep venue research / Fushimi Inari official-first, Kyoto City c
 Sources checked: 23 source entries recorded in `docs/research/venue-guides/fushimi-inari-taisha.md`.
 
 Key findings:
-- `trip-data.js` keeps 伏見稲荷大社 on 2026-09-08 from 14:10 to 15:40, with a note that summit access depends on stamina.
+- Current `trip-data.js` keeps 伏見稲荷大社 on 2026-09-08 from 14:10 to 15:40, with a note that summit access depends on stamina.
 - Kyoto City currently lists the shrine as open without a closing gate, year-round, with the amulet/talisman counter 8:00–18:00 and prayer handling 8:30–16:30.
 - Normal shrine visitation is free. Special exhibitions can have separate fees and must not be confused with ordinary admission.
 - Kyoto City states the full `お山めぐり` is about 4 km / 2 hours. Current practical guides place summit-inclusive visits at roughly 2–3 hours. Therefore **the summit should be cut from this trip's 90-minute slot**.
@@ -185,7 +185,7 @@ Key findings:
 - 2026-09-10 is Thursday. Kyoto Prefecture's current listing for the temple restaurant Seigenin says Wednesday/Thursday closed. **Do not plan lunch inside Ryoanji on this trip.**
 - The 2026 special evening viewing of all 92 Hosokawa Morihiro `Unryuzu` panels begins on 09-26, so the trip date 09-10 is before that special program. Do not inflate the visit time expecting that event.
 - For the next leg, Randen is the predictable base option: Ryoanji Station → Katabiranotsuji → Arashiyama. Randen's official material gives a 250-yen flat adult fare and basic daytime 10-minute intervals; current route searches show the rail portion at roughly 20–23 min.
-- Including the official 7–8 min temple-to-station walk and transfer/waiting, allow about 30–40 min from Ryoanji exit to Arashiyama. Therefore the existing 12:20–13:20 `lunch / Arashiyama` block leaves only a short lunch window and should not absorb a late temple exit.
+- Including the official 7–8 min temple-to-station walk and transfer/waiting, allow about 30–40 min from Ryoanji exit to Arashiyama. Therefore the 12:20–13:20 transfer/lunch block only leaves a short lunch window and should not absorb a late temple exit.
 - Ordinary admission payment methods are not clearly stated by the temple's official pages. Carry cash rather than assuming card/QR support.
 - Current official and Kyoto tourism sources agree on 600-yen adult admission; some recently updated third-party pages still show 500 yen, so those values are treated as stale.
 
@@ -218,7 +218,7 @@ Key findings:
 - The route should be one-directional: Randen Arashiyama → Nonomiya side → bamboo → choose **one** add-on (Kameyama Park, Togetsukyo, or the station footbath) → JR Saga-Arashiyama / return. Do not reverse the bamboo route for extra photos.
 - If the entrance is crowded, do not wait for an empty frame. Keep walking and take photos farther in when flow permits. The grove is a public road, so blocking traffic is especially poor practice.
 - Kyoto City has current 2026 conservation activity after repeated damage to bamboo and bamboo fences. Do not carve/touch bamboo, cross fences, or use the path in ways that obstruct visitors.
-- Ryoanji→Arashiyama already requires about 30–40 min including station walking/waiting. Therefore the 12:20–13:20 transfer/lunch block only leaves a short meal window and should not absorb a late temple exit.
+- Ryoanji→Arashiyama already requires about 30–40 min including station walking/waiting. Therefore the 12:20–13:20 transfer/lunch block only leaves a short meal window; a 10-minute restaurant queue cap is recommended.
 - Randen current fare is 250 yen with cash or national transport IC cards. Transfer at Katabiranotsuji between the Kitano and Arashiyama lines does not require an intermediate payment.
 - Randen Arashiyama Station's footbath is currently 250 yen including a towel and is a useful fatigue option, but it replaces rather than supplements Kameyama Park/Togetsukyo in the 100-minute schedule.
 - Hard sightseeing exit is 15:00–15:15. The current 15:00–16:00 `余力枠` should be preserved as delay/return/baggage buffer on the 20:05 flight day, not treated as guaranteed extra tourism.

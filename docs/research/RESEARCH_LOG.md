@@ -202,3 +202,37 @@ Open questions:
 - Recheck Randen operation and exact Ryoanji→Arashiyama departure times before leaving the temple.
 
 Next target: 嵐山・竹林の小径（next unresearched current main-line facility, immediately after 龍安寺 on Day 4）
+
+## Cycle 7 — 2026-09-02 18:56 JST
+
+Target: 嵐山・竹林の小径  
+Research depth: Deep area research / Kyoto City official crowd-access-conservation data, Randen current transport/refreshment options, 2026 itinerary and visitor-duration calibration  
+Sources checked: 16 source entries recorded in `docs/research/venue-guides/arashiyama-bamboo-grove.md`.
+
+Key findings:
+- Current `trip-data.js` keeps 嵐山 on 2026-09-10 from 13:20 to 15:00, with 竹林の小径 as the main line and a note that adding the Sagano Romantic Train requires itinerary redesign.
+- Kyoto City defines the Bamboo Grove as an approximately 400 m public-route attraction from Nonomiya Shrine past Tenryuji's north gate toward Okochi Sanso; it is free and no facility-wide hours/closure are listed.
+- Kyoto City lists Randen Arashiyama Station as about 10 min on foot and JR Saga-Arashiyama as about 13 min. For this itinerary, Randen is the arrival side from Ryoanji and JR is the preferred Kyoto-return side.
+- The bamboo path itself does **not** justify the full 100-minute slot. Current 2026 itinerary guidance gives about 30 min for the grove, and visitor reports include roughly 20-minute iconic-section visits. Recommended allocation is 75–100 min for an Arashiyama mini-loop, with 20–30 min in the bamboo itself.
+- The 13:20 arrival is a daytime crowd slot. Kyoto City places both the Bamboo Grove and Togetsukyo in its official Tourism Comfort Map / live-camera system. Same-day live conditions should be treated as the operational authority.
+- The route should be one-directional: Randen Arashiyama → Nonomiya side → bamboo → choose **one** add-on (Kameyama Park, Togetsukyo, or the station footbath) → JR Saga-Arashiyama / return. Do not reverse the bamboo route for extra photos.
+- If the entrance is crowded, do not wait for an empty frame. Keep walking and take photos farther in when flow permits. The grove is a public road, so blocking traffic is especially poor practice.
+- Kyoto City has current 2026 conservation activity after repeated damage to bamboo and bamboo fences. Do not carve/touch bamboo, cross fences, or use the path in ways that obstruct visitors.
+- Ryoanji→Arashiyama already requires about 30–40 min including station walking/waiting. Therefore the 12:20–13:20 transfer/lunch block only leaves a short meal window; a 10-minute restaurant queue cap is recommended.
+- Randen current fare is 250 yen with cash or national transport IC cards. Transfer at Katabiranotsuji between the Kitano and Arashiyama lines does not require an intermediate payment.
+- Randen Arashiyama Station's footbath is currently 250 yen including a towel and is a useful fatigue option, but it replaces rather than supplements Kameyama Park/Togetsukyo in the 100-minute schedule.
+- Hard sightseeing exit is 15:00–15:15. The current 15:00–16:00 `余力枠` should be preserved as delay/return/baggage buffer on the 20:05 flight day, not treated as guaranteed extra tourism.
+
+Files updated:
+- `docs/research/venue-guides/arashiyama-bamboo-grove.md` — created full guide with five-level durations, 100-minute mini-loop, crowd/live-camera strategy, one-add-on rule, Randen/JR connection, three-person notes, CUT RULE and 16-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — 嵐山・竹林の小径 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 7.
+
+Open questions:
+- Recheck Kyoto City's Bamboo Grove live camera and comfort forecast on 2026-09-10 immediately before leaving Ryoanji.
+- Recheck exact 9/10 Randen and JR Saga-Arashiyama→Kyoto departures.
+- Recheck station footbath/current-shop hours only if the party intends to use them.
+- Final lunch choice remains same-day because the transfer block is short and queue conditions matter more than a fixed restaurant.
+- The Sagano Romantic Train remains a separate unresearched candidate and must not be inserted without its own schedule/reservation analysis.
+
+Next target: 道頓堀・なんば（next unresearched current main-line attraction; Day 1）

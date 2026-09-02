@@ -14,57 +14,60 @@
 <body>
   <header class="hero">
     <div class="shell hero-inner">
-      <div class="eyebrow">SEPTEMBER 07—10 · 2026</div>
-      <div class="hero-row">
-        <div>
-          <h1>京都・大阪<br><span>TRIP BOARD</span></h1>
-          <p>しおりより速く、公式サイトより近い。3人旅行の共有ホーム。</p>
-        </div>
+      <div class="hero-topline">
+        <div class="eyebrow">SEPTEMBER 07—10 · 2026</div>
         <button id="shareButton" class="share-button" type="button">共有</button>
       </div>
+      <h1>京都・大阪 <span>TRIP BOARD</span></h1>
+      <p>旅程・候補・ホテル・食事・公式リンクを、旅行中にすぐ開ける共有ハブ。</p>
       <div id="tripStatus" class="trip-status"></div>
     </div>
   </header>
 
   <main class="shell main-shell">
-    <nav id="dayTabs" class="day-tabs" aria-label="日程"></nav>
-
-    <section id="todaySection" class="panel">
-      <div class="section-heading">
-        <div><p class="kicker">CURRENT PLAN</p><h2 id="todayHeading">今日の予定</h2></div>
-        <span class="updated">更新 2026.09.02</span>
-      </div>
-      <div id="todayContent"></div>
+    <section id="view-plan" class="app-view active" data-view="plan">
+      <nav id="dayTabs" class="day-tabs" aria-label="日程"></nav>
+      <section id="todaySection" class="panel plan-panel">
+        <div class="section-heading">
+          <div><p class="kicker">DAY PLAN</p><h2 id="todayHeading">今日の予定</h2></div>
+          <span class="updated">更新 2026.09.02</span>
+        </div>
+        <div id="todayContent"></div>
+      </section>
     </section>
 
-    <section id="scheduleSection" class="panel">
-      <div class="section-heading"><div><p class="kicker">ITINERARY</p><h2>4日間の全日程</h2></div></div>
-      <div id="allDays"></div>
+    <section id="view-spots" class="app-view" data-view="spots">
+      <section id="spotsSection" class="panel">
+        <div class="section-heading spot-heading">
+          <div><p class="kicker">SPOT BOARD</p><h2>行く場所・候補</h2></div>
+          <div id="spotFilters" class="filters"></div>
+        </div>
+        <div id="spotGrid" class="spot-grid"></div>
+      </section>
     </section>
 
-    <section class="two-column">
-      <article class="panel"><div class="section-heading compact"><div><p class="kicker">STAYS</p><h2>ホテル</h2></div></div><div id="stayCards" class="stack"></div></article>
-      <article class="panel"><div class="section-heading compact"><div><p class="kicker">FOOD</p><h2>食事の固定枠</h2></div></div><div id="foodCards" class="stack"></div></article>
+    <section id="view-info" class="app-view" data-view="info">
+      <section class="info-grid">
+        <article class="panel"><div class="section-heading compact"><div><p class="kicker">STAYS</p><h2>ホテル</h2></div></div><div id="stayCards" class="stack"></div></article>
+        <article class="panel"><div class="section-heading compact"><div><p class="kicker">FOOD</p><h2>食事の固定枠</h2></div></div><div id="foodCards" class="stack"></div></article>
+        <article class="panel info-links-panel"><div class="section-heading compact"><div><p class="kicker">QUICK LINKS</p><h2>公式リンク集</h2></div></div><div id="officialLinks" class="official-links"></div></article>
+      </section>
+      <section class="notice"><strong>旅行直前チェック</strong><p>交通時刻・臨時休館・営業時間は変更される可能性あり。このサイトを計画のハブにして、最終確認だけ公式サイトで行う。</p></section>
     </section>
 
-    <section id="spotsSection" class="panel">
-      <div class="section-heading spot-heading">
-        <div><p class="kicker">SPOT BOARD</p><h2>行く場所・候補</h2></div>
-        <div id="spotFilters" class="filters"></div>
-      </div>
-      <div id="spotGrid" class="spot-grid"></div>
+    <section id="view-budget" class="app-view" data-view="budget">
+      <section id="budgetSection" class="panel budget-panel">
+        <div class="section-heading compact"><div><p class="kicker">BUDGET</p><h2>予算</h2></div></div>
+        <div id="budgetContent"></div>
+      </section>
     </section>
-
-    <section class="two-column">
-      <article id="budgetSection" class="panel"><div class="section-heading compact"><div><p class="kicker">BUDGET</p><h2>予算</h2></div></div><div id="budgetContent"></div></article>
-      <article class="panel"><div class="section-heading compact"><div><p class="kicker">QUICK LINKS</p><h2>公式リンク集</h2></div></div><div id="officialLinks" class="official-links"></div></article>
-    </section>
-
-    <section class="notice"><strong>旅行直前チェック</strong><p>交通時刻・臨時休館・営業時間は変更される可能性あり。このサイトを計画のハブにして、最終確認だけ公式サイトで行う。</p></section>
   </main>
 
-  <nav class="bottom-nav" aria-label="ページ内ナビゲーション">
-    <a href="#todaySection">今</a><a href="#scheduleSection">日程</a><a href="#spotsSection">候補</a><a href="#budgetSection">予算</a>
+  <nav class="bottom-nav" aria-label="メインナビゲーション">
+    <button class="nav-item active" type="button" data-view-target="plan"><span>日程</span></button>
+    <button class="nav-item" type="button" data-view-target="spots"><span>スポット</span></button>
+    <button class="nav-item" type="button" data-view-target="info"><span>情報</span></button>
+    <button class="nav-item" type="button" data-view-target="budget"><span>予算</span></button>
   </nav>
 
   <script src="trip-data.js"></script>

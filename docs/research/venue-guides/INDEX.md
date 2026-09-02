@@ -1,11 +1,11 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 17:03 JST
+Last updated: 2026-09-02 17:11 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
 | Nintendo Museum | RESEARCHED | 2026-09-02 | HIGH for official facts / MEDIUM for crowd-duration estimates | Recheck official notices, hours, access, and workshop availability on 2026-09-08/09 |
-| 清水寺 | NOT_STARTED | — | — | Yes |
+| 清水寺 | RESEARCHED | 2026-09-02 | HIGH for official facts / MEDIUM for crowd-duration estimates | Recheck official notices, comfort map, transport, Jishu Shrine and Tainai-meguri on 2026-09-08 |
 | 二年坂・三年坂 | NOT_STARTED | — | — | Yes |
 | 伏見稲荷大社 | NOT_STARTED | — | — | Yes |
 | 金閣寺 | NOT_STARTED | — | — | Yes |

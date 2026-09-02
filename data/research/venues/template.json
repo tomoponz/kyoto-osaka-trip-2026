@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "slug": "replace-me",
+  "name": "施設名",
+  "status": "IN_PROGRESS",
+  "lastResearched": "2026-09-02",
+  "confidence": "LOW",
+  "tripFit": "MEDIUM",
+  "summary": "調査結果を今回の3人旅行向けに80〜150文字程度で要約。",
+  "tripRecommendation": {
+    "recommendedDuration": "未確定",
+    "recommendedArrival": "未確定",
+    "latestDeparture": "未確定",
+    "budgetPerPerson": "未確定",
+    "reasons": []
+  },
+  "basicInfo": {
+    "address": "",
+    "hours": "",
+    "lastEntry": "",
+    "closure": "",
+    "price": "",
+    "reservation": "",
+    "sameDayTicket": "",
+    "payment": "",
+    "nearestStation": "",
+    "stationWalk": "",
+    "officialUrl": "https://example.com/",
+    "mapQuery": ""
+  },
+  "durationProfiles": [
+    {"label":"超短縮","duration":"未確定","canDo":"","basis":"","sourceIds":[]},
+    {"label":"最低限","duration":"未確定","canDo":"","basis":"","sourceIds":[]},
+    {"label":"標準","duration":"未確定","canDo":"","basis":"","sourceIds":[]},
+    {"label":"じっくり","duration":"未確定","canDo":"","basis":"","sourceIds":[]},
+    {"label":"最大目安","duration":"未確定","canDo":"","basis":"","sourceIds":[]}
+  ],
+  "recommendedRoute": [],
+  "tips": [
+    {"title":"TIP 1","detail":"","sourceIds":[]},
+    {"title":"TIP 2","detail":"","sourceIds":[]},
+    {"title":"TIP 3","detail":"","sourceIds":[]},
+    {"title":"TIP 4","detail":"","sourceIds":[]},
+    {"title":"TIP 5","detail":"","sourceIds":[]}
+  ],
+  "crowd": {"summary":"","periods":[]},
+  "partyOfThree": [],
+  "cutRules": [
+    {"delay":"15分遅れ","action":""},
+    {"delay":"30分遅れ","action":""},
+    {"delay":"60分遅れ","action":""},
+    {"delay":"90分以上遅れ","action":""}
+  ],
+  "prep": [],
+  "dayOfChecks": [],
+  "sources": [
+    {"id":"S1","title":"公式サイト","url":"https://example.com/","type":"OFFICIAL","published":null,"updated":null,"accessed":"2026-09-02","confirmed":[]}
+  ]
+}

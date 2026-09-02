@@ -64,3 +64,38 @@ Open questions:
 - Use the Kyoto Tourism Comfort Map on 9/8 morning for real-time crowd conditions.
 
 Next target: 二年坂・三年坂（same Day 2 main-line sequence immediately after 清水寺）
+
+## Cycle 3 — 2026-09-02 17:54 JST
+
+Target: 二年坂・三年坂（産寧坂）  
+Research depth: Deep area research / Kyoto City official history-preservation-crowd-manners data plus current transit and visitor-duration evidence  
+Sources checked: 16 source entries recorded in `docs/research/venue-guides/ninenzaka-sannenzaka.md`.
+
+Key findings:
+- Current `trip-data.js` keeps the area on 2026-09-08 from 12:20 to 13:20 as `二年坂・三年坂 / 昼食`, immediately after 清水寺 and before 14:10 伏見稲荷.
+- This is not an enclosed facility. Kyoto official pages list no single area-wide opening hours or closure day; shops and restaurants operate individually.
+- The streets are part of the Sanneizaka Important Preservation District for Groups of Traditional Buildings, where stone steps, stone paving, late-Edo to Taisho machiya, Yasaka Pagoda and surrounding temples form one historic landscape.
+- For this trip, 45–60 min is a reasonable walking/browsing allocation. A seated lunch plus relaxed browsing is better treated as 75–90 min, so the existing 60-minute combined slot must be run as a compressed plan.
+- Recommended sequence is Kiyomizu-dera → Sannenzaka → quick lunch → Ninenzaka → optional short Yasaka Pagoda photo → leave toward Kiyomizu-Gojo Station.
+- Lunch should be decided quickly: use a 10-minute queue cap. Waiting for a famous café/restaurant can consume the entire transfer margin.
+- Kyoto City's manners guidance asks visitors not to spread across narrow roads, not to stop in groups, not to eat while walking in public places, and to photograph without obstructing others.
+- Current Kyoto City comfort-map coverage includes `清水坂〜ねねの道`; this should be checked on 9/8 morning because the 12:20 slot overlaps the busiest daytime period.
+- A 2025 ANA Research Institute field report described Ninenzaka/Sannenzaka/Kiyomizu-dera as so crowded with foreign visitors and school groups that passing through was difficult, supporting a conservative walking-time margin.
+- MapFan gives one Ninenzaka-area-to-Kiyomizu-Gojo walking example of about 1.5 km / 23 min. Current transit searches show Kiyomizu-Gojo→Fushimi-Inari at about 7–8 min, direct, 240 yen. Therefore **13:10 departure is recommended and 13:20 is an absolute upper limit** if 14:10 Fushimi Inari is to remain comfortable.
+- Shopping is the largest open-ended time sink. The guide caps shopping at one store per traveler and treats Yasaka Pagoda as optional if time remains.
+- Rain materially increases the risk on stone steps and paving; footwear and avoiding rushed photography matter more than squeezing in one extra shop.
+- One search result (`sannenzakakyoto.com`) presented itself like a preservation-group site but showed outdated Kiyomizu-dera admission and questionable contact details; it was excluded from authoritative evidence.
+
+Files updated:
+- `docs/research/venue-guides/ninenzaka-sannenzaka.md` — created full area guide with 5-level durations, compressed lunch plan, crowd strategy, three-person rules, CUT RULE, transit connection and source evidence.
+- `docs/research/venue-guides/INDEX.md` — 二年坂・三年坂 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 3.
+
+Open questions:
+- Recheck Kyoto Tourism Comfort Map for `清水坂〜ねねの道` on 2026-09-08 morning.
+- Recheck actual rain / heat conditions because stone steps and walking time are weather-sensitive.
+- Recheck 9/8 weekday Keihan timetable and operations before leaving Kiyomizu.
+- Lunch is intentionally not fixed; actual restaurant availability and queue length remain same-day decisions.
+- Exact walking time from the chosen lunch location to Kiyomizu-Gojo varies; 23 min is a representative map-route estimate, not a guaranteed value.
+
+Next target: 伏見稲荷大社（same Day 2 main-line facility immediately after 二年坂・三年坂）

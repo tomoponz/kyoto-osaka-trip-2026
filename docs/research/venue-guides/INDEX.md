@@ -1,6 +1,6 @@
 # Venue Research Index
 
-Last updated: 2026-09-02 19:25 JST
+Last updated: 2026-09-02 19:31 JST
 
 | Facility | Status | Last researched | Confidence | Needs revisit |
 |---|---|---|---|---|
@@ -16,7 +16,7 @@ Last updated: 2026-09-02 19:25 JST
 | teamLab Biovortex Kyoto | NOT_STARTED | — | — | Yes |
 | 鞍馬 → 貴船 山越え | NOT_STARTED | — | — | Yes |
 | 551蓬莱 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current prices/menu / MEDIUM for queue-duration and reservation behavior | Recheck 9/7 same-day queue, temporary closure, limited-item stock and payment options on 2026-09-07 |
-| 本家 第一旭 本店 | NOT_STARTED | — | — | Yes |
+| 本家 第一旭 本店 | RESEARCHED | 2026-09-02 | HIGH for official hours/access/menu/payment / MEDIUM for queue-duration and reservation behavior | Recheck 9/8 same-day queue, temporary closure, student-discount conditions and ticketing flow on 2026-09-08 |
 | 心斎橋PARCO | RESEARCHED | 2026-09-02 | HIGH for official hours/access/current floors/events / MEDIUM for crowd-duration estimates | Recheck 9/7 event entry rules, Disney Store restrictions, temporary hours and fatigue on 2026-09-07 |
 | 道頓堀・なんば | RESEARCHED | 2026-09-02 | HIGH for official access/area facts / MEDIUM for crowd-duration and shop-queue estimates | Recheck weather, any event/traffic restrictions, 551 queue and Day 1 fatigue on 2026-09-07 |
 | ポルタイン弁天町 | NOT_STARTED | — | — | Yes |

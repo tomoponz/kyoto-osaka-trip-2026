@@ -402,3 +402,35 @@ Open questions:
 - Check-in/check-out time should be verified against the actual booked plan even though current 2026 booking platforms list 15:00/10:00.
 
 Next target: 京都第一ホテル（next unresearched scheduled hotel / main-line stay）
+
+## Cycle 13 — 2026-09-02 20:03 JST
+
+Target: 三十三間堂（蓮華王院）  
+Research depth: Deep venue research / temple official 2026 hours-fees-statues-rules, Kyoto City access and bus data, current 2026 duration/crowd evidence, and Day 2 connection analysis  
+Sources checked: 20 source entries recorded in `docs/research/venue-guides/sanjusangendo.md`.
+
+Key findings:
+- Current `trip-data.js` schedules 三十三間堂 on 2026-09-08 from 10:30 to 11:10, between the 09:45–10:15 Kyoto First Hotel baggage-drop block and the 11:30 Kiyomizu-dera block.
+- Current official September hours are **08:30–17:00**, reception ending 16:30; ordinary adult admission is **600 yen** and the temple is year-round.
+- The hall is shoes-off. The core is 1000 standing Senju Kannon plus the central seated Kannon, with the 28 deities and Wind/Thunder gods; the temple provides a touch-panel statue search system.
+- The official Wind/Thunder page gives a venue-specific viewing trick: bend the knees slightly and look up so the rafters add a lightning-like visual effect.
+- The current 40-minute slot is viable as a compressed visit, but the practical standard is about 45–60 minutes. Recommended allocation for this itinerary is **35–45 minutes**, with 11:05 target departure and 11:10 absolute upper limit.
+- Official pages retrieved do not clearly state current admission payment methods. A 2026-04 visitor reported cashless payment unavailable, so carry cash while keeping the payment claim explicitly unverified.
+- The **front connection is fragile**: if baggage drop at Kyoto First Hotel consumes the full slot until 10:15, the 10:30 temple start is difficult without a taxi. Kyoto City gives Kyoto Station→Sanjusangendo walking as about 18 minutes; Kyoto Taxi Association gives Kyoto Station→temple as roughly 1.7 km / 800 yen as a reference estimate.
+- The **next connection is also fragile**: route 206 runs toward Gojozaka/Kiyomizu-michi, but Kiyomizu-dera itself is still about a 10-minute walk from those stops. Therefore leave Sanjusangendo around 11:00–11:05 and compare taxi when delayed rather than assuming an 11:10→11:30 transit connection is reliable.
+- In a 40-minute visit, prioritize the hall. Garden, South Gate/Taiko Wall, souvenirs, and the touch-panel system are the first cuts.
+- If Day 2 is already about 60 minutes late, **cut Sanjusangendo** instead of allowing delay to cascade through Kiyomizu-dera, lunch, Kinkakuji and Ryoanji.
+
+Files updated:
+- `docs/research/venue-guides/sanjusangendo.md` — created full guide with five-level duration estimates, 40-minute route, venue-specific viewing tips, crowd/payment/access analysis, three-person rules, CUT RULE and 20-source evidence table.
+- `docs/research/venue-guides/INDEX.md` — 三十三間堂 set to RESEARCHED.
+- `docs/research/RESEARCH_LOG.md` — appended Cycle 13.
+
+Open questions:
+- Recheck Sanjusangendo official NEWS on 2026-09-07 evening / 09-08 morning for any temporary restriction or culture-event impact.
+- Confirm current admission payment methods; official pages do not state card/QR support.
+- Confirm ordinary-day goshuin reception hours and prices if any traveler wants one.
+- Tourist locker availability was not confirmed from official pages; keep large luggage at Kyoto First Hotel.
+- Recheck actual Kyoto First Hotel→Sanjusangendo and Sanjusangendo→Kiyomizu road/bus conditions on the morning of 09-08.
+
+Next target: 東映太秦映画村（next unresearched current main-line venue; Day 4）
